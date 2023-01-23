@@ -11,9 +11,9 @@ def simplify_credits(html):
     pattern = re.compile(s)
     html = pattern.sub(r'', html)
 
-    s = r'Copyright &#169; 2022, Agile Scientific'
+    s = r'Copyright &#169; 2023, Scienxlab'
     pattern = re.compile(s)
-    new_s = '&#169; 2022, Agile Scientific | <a href="https://creativecommons.org/licenses/by/4.0/">CC BY</a>'
+    new_s = '&#169; 2023, Scienxlab | <a href="https://creativecommons.org/licenses/by/4.0/">CC BY</a>'
     html = pattern.sub(new_s, html)
 
     return html
@@ -25,7 +25,7 @@ def add_analytics(html):
     """
     s = r'</head>'
     pattern = re.compile(s)
-    new_s = '<script defer data-domain="code.agilescientific.com" src="https://plausible.io/js/plausible.js"></script></head>'
+    new_s = '<script defer data-domain="code.scienxlab.com" src="https://plausible.io/js/plausible.js"></script></head>'
     html = pattern.sub(new_s, html)
 
     return html

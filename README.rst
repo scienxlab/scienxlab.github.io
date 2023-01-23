@@ -1,6 +1,6 @@
-agilescientific.github.io
-==========================
+scienxlab.github.io
+===================
 
-Pages site for Agile*.
+Pages site for Scienxlab.
 
 Edit the content in ``docs``.
