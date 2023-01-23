@@ -14,7 +14,7 @@ author = 'Scienxlab'
 # This is required for GitHub pages, and seems neater than putting
 # it in the GitHub build-docs Action. Creates .nojekyll and CNAME.
 extensions = ['sphinx.ext.githubpages']
-html_baseurl = 'https://scienxlab.com'  # Must have protocol.
+html_baseurl = 'https://scienxlab.org'  # Must have protocol.
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -24,7 +24,7 @@ html_theme_options = {
     "footer_icons": [
         {
             "name": "Scienxlab",
-            "url": "https://scienxlab.com",
+            "url": "https://scienxlab.org",
             "html": """
                 <svg width="200" height="200" version="1.1" viewBox="0 0 187.5 187.5" xmlns="http://www.w3.org/2000/svg">
 
