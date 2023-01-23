@@ -11,7 +11,7 @@ scienxlab
 
     | A scientific computing laboratory.
 
-Scienxlab is a spinoff from [Agile*](https://code.agilescientific.com).
+Scienxlab is a spinoff from `Agile* <https://code.agilescientific.com>`_.
 
 Project documentation
 ---------------------
@@ -21,7 +21,7 @@ Check out the documentation to our projects:
 * `redflag <redflag>`_ — early warning system for machine learning data.
 * `unmap <unmap>`_ — recovering data from pseudocolor images.
 
-Other projects will be migrating here soon from [Agile*](https://code.agilescientific.com).
+Other projects will be migrating here soon from `Agile* <https://code.agilescientific.com>`_.
 
 
 .. toctree::

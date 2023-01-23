@@ -1,6 +1,6 @@
 /* Styles the main heading. */
 h1 {
-    color: #14ca29;
+    color: #9c31c3;
 }
 
 /* Removes Captions from the main page. */
@@ -16,7 +16,7 @@ blockquote {
 }
 
 blockquote div.line {
-    color: #0f861d;
+    color: #5b1197;
     display: inline;
     font-style: normal !important;
     font-size: 150%;
@@ -39,7 +39,7 @@ blockquote div.line {
 }
 
 #forkongithub a:hover {
-    background:#14ca29;
+    background:#9c31c3;
     color:#fff;
 }
 
