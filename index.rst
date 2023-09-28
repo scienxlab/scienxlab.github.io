@@ -16,12 +16,13 @@ Scienxlab is a spinoff from `Agile* <https://code.agilescientific.com>`_.
 Project documentation
 ---------------------
 
-Check out the documentation to our projects:
+Check out the projects:
 
 * `redflag <redflag>`_ — early warning system for machine learning data.
 * `unmap <unmap>`_ — recovering data from pseudocolor images.
+* `checklists <checklists>`_ — simple checklists for high quality data science.
 
-Other projects will be migrating here soon from `Agile* <https://code.agilescientific.com>`_.
+You might also like these coding challenges: `kata <https://kata.geosci.ai>`_.
 
 
 .. toctree::
