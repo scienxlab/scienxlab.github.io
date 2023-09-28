@@ -47,7 +47,7 @@ exclude_patterns = ['_build', 'README.rst']
 #
 # https://sphinx-themes.org/sample-sites/furo/
 html_theme = 'furo'
-
+html_title = ''
 html_logo = 'static/scienxlab.png'
 
 # Add any paths that contain custom static files (such as style sheets) here,
