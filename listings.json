@@ -1,0 +1,14 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/welcome-to-scienxlab.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/blog/welcome-to-scienxlab.html"
+    ]
+  }
+]

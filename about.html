@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>scienxlab - Welcome to scien✖️lab</title>
+<title>scienxlab - About</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,12 +31,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./images/scienxlab.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -62,38 +59,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -123,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -144,77 +110,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-jolla">
+  <img src="images/scienxlab.png" class="about-image
+  round " style="height: 10em; width: 10em;">
+ <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Welcome to scien✖️lab</h1>
-<p class="subtitle lead">An open access scientific computing laboratory.</p>
+<h1 class="title">About</h1>
 </div>
-
-
-
 <div class="quarto-title-meta">
-
-    
-  
-    
   </div>
-  
-
-</header>
-
-<section id="projects" class="level2">
-<h2 class="anchored" data-anchor-id="projects">Projects</h2>
-<ul>
-<li><a href="./redflag">redflag</a> — early warning system for machine learning data.</li>
-<li><a href="./unmap">unmap</a> — recovering data from pseudocolor images.</li>
-<li><a href="./checklists">checklists</a> — simple checklists for high quality data science.</li>
-<li><a href="https://kata.geosci.ai/">kata</a> — fun coding challenges for geoscientists.</li>
-</ul>
-</section>
-<section id="recent-posts" class="level2">
-<h2 class="anchored" data-anchor-id="recent-posts">Recent posts</h2>
+</header><main class="content" id="quarto-document-content">
+<p>scien✖️lab is a microscopic scientific laboratory producing open scientific software.<br> Matt Hall / <a href="https://github.com/kwinkunks"><span class="citation" data-cites="kwinkunks">@kwinkunks</span></a> writes all the bugs, makes all the tea, and adheres to ISO 3103.<br> Find Matt at <a href="https://softwareunderground.org/">Software Underground</a> or feel free to get in touch at <a href="mailto:hello@scienxlab.org">hello@scienxlab.org</a></p>
 
 
-
-</section>
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1697414400000" data-listing-file-modified-sort="1697379758139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./blog/welcome-to-scienxlab.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</main>  
 </div>
-<div class="body">
-<a href="./blog/welcome-to-scienxlab.html">
-<h3 class="no-anchor listing-title">
-Welcome to scienxlab
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>The blog is back!</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/welcome-to-scienxlab.html">
-<div class="listing-date">
-Oct 16, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -235,13 +146,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
