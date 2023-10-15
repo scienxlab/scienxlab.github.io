@@ -1,0 +1,11 @@
+---
+title: "About"
+image: images/scienxlab.png
+about:
+  template: jolla
+  image-width: 10em
+---
+
+scien✖️lab is a microscopic scientific laboratory producing open scientific software.<br/>
+Matt Hall / [@kwinkunks](https://github.com/kwinkunks) writes all the bugs, makes all the tea, and adheres to ISO 3103.<br/>
+Find Matt at [Software Underground](https://softwareunderground.org/) or feel free to get in touch at [hello@scienxlab.org](mailto:hello@scienxlab.org)

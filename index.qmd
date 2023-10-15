@@ -1,0 +1,21 @@
+---
+title: "Welcome to scien✖️lab"
+subtitle: "An open access scientific computing laboratory."
+listing:
+  contents: blog
+  sort: "date desc"
+  type: default
+  categories: false
+  page-size: 3
+---
+
+
+## Projects
+
+- [redflag](/redflag) — early warning system for machine learning data.
+- [unmap](/unmap) — recovering data from pseudocolor images.
+- [checklists](/checklists) — simple checklists for high quality data science.
+- [kata](https://kata.geosci.ai/) — fun coding challenges for geoscientists.
+
+
+## Recent posts

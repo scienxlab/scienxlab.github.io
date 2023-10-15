@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "scienxlab"
+  favicon: "images/scienxlab.png"
+  site-url: "https://scienxlab.org/"
+  navbar:
+    search: true
+    logo: "images/scienxlab.png"
+    right:
+      - blog.qmd
+      - about.qmd
+      - icon: github
+        href: https://github.com/scienxlab
+  page-footer:
+    center: 
+      - text: "&copy;2023 scienxlab | Licensed CC BY-SA 4.0 | Reuse and share"
+        href: https://creativecommons.org/licenses/by-sa/4.0/
+
+format:
+  html:
+    theme: pulse
+    css: styles.css
+
+execute:
+  freeze: auto
