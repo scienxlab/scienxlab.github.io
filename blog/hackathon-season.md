@@ -1,7 +1,7 @@
 ---
 title: "Hackathon season"
 author: "Matt Hall"
-date: "2023-10-16"
+date: "2023-10-26"
 description: "Social coding is still the best coding"
 ---
 
