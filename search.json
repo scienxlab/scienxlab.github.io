@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "scien✖️lab is a microscopic scientific laboratory producing open scientific software. Matt Hall / @kwinkunks writes all the bugs, makes all the tea, and adheres to ISO 3103. Find Matt at Software Underground or feel free to get in touch at hello@scienxlab.org"
-  },
-  {
     "objectID": "blog/welcome-to-scienxlab.html",
     "href": "blog/welcome-to-scienxlab.html",
     "title": "Welcome to scienxlab",
@@ -18,7 +11,14 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Welcome to scienxlab\n\n\n\n\n\nThe blog is back!\n\n\n\n\n\n\nOct 16, 2023\n\n\nMatt Hall\n\n\n\n\n\n\nNo matching items"
+    "text": "Hackathon season\n\n\n\n\n\nSocial coding is still the best coding\n\n\n\n\n\n\nOct 16, 2023\n\n\nMatt Hall\n\n\n\n\n\n\n  \n\n\n\n\nWelcome to scienxlab\n\n\n\n\n\nThe blog is back!\n\n\n\n\n\n\nOct 16, 2023\n\n\nMatt Hall\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "scien✖️lab is a microscopic scientific laboratory producing open scientific software. Matt Hall / @kwinkunks writes all the bugs, makes all the tea, and adheres to ISO 3103. Find Matt at Software Underground or feel free to get in touch at hello@scienxlab.org"
   },
   {
     "objectID": "index.html",
@@ -40,5 +40,19 @@
     "title": "Welcome to scien✖️lab",
     "section": "Recent posts",
     "text": "Recent posts"
+  },
+  {
+    "objectID": "blog/hackathon-season.html",
+    "href": "blog/hackathon-season.html",
+    "title": "Hackathon season",
+    "section": "",
+    "text": "Hackathons aren’t what they used to be. I think they’re even better.\nThe golden age of hackathons was 2010 to 20-COVID. Before 2010 I think they were mostly niche Silicon Valley affairs; Agile ran its first hack in 2013 so that’s when they started for me. I ran 11 of them in 2019… And it really did end with COVID: I was at an event in Kuala Lumpur when COVID lockdown started.\nHackathons never went away completely, but they definitely dimmed. Happily, they seem to be coming back in style, and while the concept is perhaps not quite as exciting or cool as it was, in some ways the events are better. The frenetic commercial energy of Digital Transformation has faded. The hackers, at least in the subsurface domain, are much more savvy: there’s data everywhere and everyone knows what an API is. There are far more packages and tools to choose from (with ChatGPT to find them). It’s become easier to take time out from the office. And while many of the folks who wanted or needed to find their digital feet have achieved their goals, the end of petroleum looms ever larger and I sense that more people see opportunity in it.\nI’m on my way home from a hackathon right now, my first one for about a year. It was wonderful, just like always. Lots of first-timers, which I love to see, and lots of brilliant ideas. It’s absolutely the best possible way to spend time with colleagues. If you haven’t experienced it, you should organize one at your place of work. Here’s how. Go on, I dare you 🚀"
+  },
+  {
+    "objectID": "blog/hackathon-season.html#an-invitation",
+    "href": "blog/hackathon-season.html#an-invitation",
+    "title": "Hackathon season",
+    "section": "An invitation",
+    "text": "An invitation\nIf you’re not quite ready to host one, come and experience one instead. The FORCE Language Modeling Hackathon is happening in Stavanger, Norway, on 30 November and 1 December 2023. I’m stoked to be hosting, with Peter Bormann organzing. The plan is to fine-tune some language models with open subsurface data from the Norwegian shelf. What would you ask a virtual assistant that has read everything about your project?\n\nFind out more and sign up!"
   }
 ]

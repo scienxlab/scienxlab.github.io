@@ -2,12 +2,14 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/hackathon-season.html",
       "/blog/welcome-to-scienxlab.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
+      "/blog/hackathon-season.html",
       "/blog/welcome-to-scienxlab.html"
     ]
   }
