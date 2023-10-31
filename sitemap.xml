@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://scienxlab.org/blog/welcome-to-scienxlab.html</loc>
-    <lastmod>2023-10-26T18:49:39.413Z</lastmod>
+    <lastmod>2023-10-31T19:16:10.637Z</lastmod>
   </url>
   <url>
-    <loc>https://scienxlab.org/blog.html</loc>
-    <lastmod>2023-10-26T18:49:38.701Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scienxlab.org/about.html</loc>
-    <lastmod>2023-10-26T18:49:37.489Z</lastmod>
+    <loc>https://scienxlab.org/blog/software-underground-is-moving.html</loc>
+    <lastmod>2023-10-31T19:16:09.765Z</lastmod>
   </url>
   <url>
     <loc>https://scienxlab.org/index.html</loc>
-    <lastmod>2023-10-26T18:49:38.297Z</lastmod>
+    <lastmod>2023-10-31T19:16:08.772Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scienxlab.org/about.html</loc>
+    <lastmod>2023-10-31T19:16:07.732Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scienxlab.org/blog.html</loc>
+    <lastmod>2023-10-31T19:16:09.337Z</lastmod>
   </url>
   <url>
     <loc>https://scienxlab.org/blog/hackathon-season.html</loc>
-    <lastmod>2023-10-26T18:49:39.057Z</lastmod>
+    <lastmod>2023-10-31T19:16:10.217Z</lastmod>
   </url>
 </urlset>

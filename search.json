@@ -7,18 +7,11 @@
     "text": "A lot has happened in the 413 days since my last blog post.\nWith my colleagues, I shut down Agile in September. With my family, I packed up my house in October and moved to Norway in November. With my new colleagues, I found my feet in Equinor in December, and that adventure continues.\nHaving started my career as a geologist, then reconfigured as a geophysicist, I’m proud to call myself a developer today. I still have tons to learn about maintaining large projects in an enterprise setting, but I do make things and I consider that to be the killer feature of any hacker.\nA few people have asked me what it’s like to have a boss again, or work inside a big corporation. But really, it’s not that different from working with corporate clients. I still have a lot of self-determination, thanks to the progressive style of the awesome team I work in, and the only thing I really miss is being able to decide for myself that I’d like to spend $10k on a hackathon.\nLife outside work is full of hikes and bikes, far-flung fjords and cosy cabins. My Norwegian is a bit rusty (my wife and I lived here in the nineties) but basically functional. We found a house to live in, though it did require some downsizing.\nIn case you hadn’t noticed, this blog post is more of a postcard to the many friends and co-conspirators I’ve completely failed to keep in touch with. With luck, the coming months and years will provide many opportunities to catch up in person.\nFor now though… the blog is back! Scien✖️lab is here 🚀"
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
+    "objectID": "blog/software-underground-is-moving.html",
+    "href": "blog/software-underground-is-moving.html",
+    "title": "Software Underground is moving",
     "section": "",
-    "text": "Hackathon season\n\n\n\n\n\nSocial coding is still the best coding\n\n\n\n\n\n\nOct 26, 2023\n\n\nMatt Hall\n\n\n\n\n\n\n  \n\n\n\n\nWelcome to scienxlab\n\n\n\n\n\nThe blog is back!\n\n\n\n\n\n\nOct 16, 2023\n\n\nMatt Hall\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "scien✖️lab is a microscopic scientific laboratory producing open scientific software. Matt Hall / @kwinkunks writes all the bugs, makes all the tea, and adheres to ISO 3103. Find Matt at Software Underground or feel free to get in touch at hello@scienxlab.org"
+    "text": "The Software Underground — a free chat group, a community, a movement — is moving to the Mattermost platform. As of right now, it lives at mattermost.softwareunderground.org.\nAfter a little over 8 years on Slack, we have taken the decision to move to the open-source Mattermost software (note, that link is only for the software, not for our instance of it). We are hosting it ourselves in Hetzner’s cloud (based in Finland), which means we own our own data… and maybe have a little more control over our destiny.\nApart from being open source, there are some other cool features of Mattermost, compared to Slack:\n\nFull support for Markdown, plus LaTeX equations.\nSyntax highlighted code blocks.\nThe concept of Teams, allowing us to host subcommunities.\n\nOh yeah, and it will cost us about a third of what we were previously spending on Slack 💸 that is, until they doubled our payments in September when apparently they changed how they count ‘active members’. Even with the 85% non-profit discount, Slack was simply too expensive. And some people were not comfortable with its ownership and general direction. For example, it recently introduced a 90-day message lifetime for teams on the free tier, all but obviating its use for smaller communities (who already had a 10,000 message limit).\nIf you’ve been looking for somewhere to hang out and chat — or even just to lurk and learn — about the digital subsurface, then Software Underground might be for you. It’s full of coders, people learning to code, earth scientists, and people learning to earth science. Check it out."
   },
   {
     "objectID": "index.html",
@@ -40,6 +33,20 @@
     "title": "Welcome to scien✖️lab",
     "section": "Recent posts",
     "text": "Recent posts"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "scien✖️lab is a microscopic scientific laboratory producing open scientific software. Matt Hall / @kwinkunks writes all the bugs, makes all the tea, and adheres to ISO 3103. Find Matt at Software Underground or feel free to get in touch at hello@scienxlab.org"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Software Underground is moving\n\n\n\n\n\nThe social network for digital geoscientists is moving house\n\n\n\n\n\n\nOct 31, 2023\n\n\nMatt Hall\n\n\n\n\n\n\n  \n\n\n\n\nHackathon season\n\n\n\n\n\nSocial coding is still the best coding\n\n\n\n\n\n\nOct 26, 2023\n\n\nMatt Hall\n\n\n\n\n\n\n  \n\n\n\n\nWelcome to scienxlab\n\n\n\n\n\nThe blog is back!\n\n\n\n\n\n\nOct 16, 2023\n\n\nMatt Hall\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/hackathon-season.html",
