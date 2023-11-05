@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://scienxlab.org/blog/welcome-to-scienxlab.html</loc>
-    <lastmod>2023-10-31T19:16:10.637Z</lastmod>
+    <loc>https://scienxlab.org/blog.html</loc>
+    <lastmod>2023-11-05T17:50:13.597Z</lastmod>
   </url>
   <url>
-    <loc>https://scienxlab.org/blog/software-underground-is-moving.html</loc>
-    <lastmod>2023-10-31T19:16:09.765Z</lastmod>
+    <loc>https://scienxlab.org/blog/im-not-stupid-im-just.html</loc>
+    <lastmod>2023-11-05T17:50:12.621Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scienxlab.org/blog/welcome-to-scienxlab.html</loc>
+    <lastmod>2023-11-05T17:50:11.777Z</lastmod>
   </url>
   <url>
     <loc>https://scienxlab.org/index.html</loc>
-    <lastmod>2023-10-31T19:16:08.772Z</lastmod>
+    <lastmod>2023-11-05T17:50:10.453Z</lastmod>
   </url>
   <url>
-    <loc>https://scienxlab.org/about.html</loc>
-    <lastmod>2023-10-31T19:16:07.732Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scienxlab.org/blog.html</loc>
-    <lastmod>2023-10-31T19:16:09.337Z</lastmod>
+    <loc>https://scienxlab.org/blog/software-underground-is-moving.html</loc>
+    <lastmod>2023-11-05T17:50:11.369Z</lastmod>
   </url>
   <url>
     <loc>https://scienxlab.org/blog/hackathon-season.html</loc>
-    <lastmod>2023-10-31T19:16:10.217Z</lastmod>
+    <lastmod>2023-11-05T17:50:12.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scienxlab.org/about.html</loc>
+    <lastmod>2023-11-05T17:50:12.965Z</lastmod>
   </url>
 </urlset>

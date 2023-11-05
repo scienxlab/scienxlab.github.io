@@ -1,17 +1,24 @@
 [
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "I’m not stupid I’m just…\n\n\n\n\n\n…curious, …in a hurry, …not that interested\n\n\n\n\n\n\nNov 6, 2023\n\n\nMatt Hall\n\n\n\n\n\n\n  \n\n\n\n\nSoftware Underground is moving\n\n\n\n\n\nThe social network for digital geoscientists is moving house\n\n\n\n\n\n\nOct 31, 2023\n\n\nMatt Hall\n\n\n\n\n\n\n  \n\n\n\n\nHackathon season\n\n\n\n\n\nSocial coding is still the best coding\n\n\n\n\n\n\nOct 26, 2023\n\n\nMatt Hall\n\n\n\n\n\n\n  \n\n\n\n\nWelcome to scienxlab\n\n\n\n\n\nThe blog is back!\n\n\n\n\n\n\nOct 16, 2023\n\n\nMatt Hall\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/im-not-stupid-im-just.html",
+    "href": "blog/im-not-stupid-im-just.html",
+    "title": "I’m not stupid I’m just…",
+    "section": "",
+    "text": "People with a lot of expertise (I don’t like the word ‘expert’) can help others learn and improve by writing. As a bonus, the act of writing reflexively sharpens the expertise. Everyone wins!\nHowever, if you ask someone with great experience and theoretical insight to write a how to wiki page or best practice document, there’s a good chance it will be 3000 words long, or even shatter into seven 3000-word-long sub-articles. There will probably be equations. Code, if you’re lucky. References. Valuable documentation of a difficult task, for sure…\n…but completely inappropriate for 90% of use cases. Most people, most of the time, can’t absorb thousands of words right now. They see the wall of text and immediately smash that back button.\nThe challenge of reducing important ideas to a couple of paragraphs and some bullet points is too much for some. It’s “dumbing down”, “diluting”, “oversimplifying”, or pandering to “the lowest common denominator”. The target audience sometimes participates in this notion with requests to, “Explain it like I’m 5”.\nThis is a horrible misunderstanding. Simplistic content for dumb people with childlike vocabularies is not what is being asked for. There are lots of reasons other brilliant people with experience and insight want approachable content sometimes:\n\nThey only have a few minutes right now.\nThey are new to this specific topic.\nThe topic is not a critical issue for them.\nThey are just curious.\nThey just needed a refresher.\nThey are looking for something to link to.\nThey are trying to help someone else.\n\nIt’s possible that large language models like ChatGPT are especially good at this task of summarization. But I believe it’s a skill worth honing, if not for writing then for speaking. If you learn to see the loss of precision as a gain in signal strength, perhaps the tradeoff will seem less costly.\nThe result: more smart people will find and read your ideas, and get the help they were looking for."
+  },
+  {
     "objectID": "blog/welcome-to-scienxlab.html",
     "href": "blog/welcome-to-scienxlab.html",
     "title": "Welcome to scienxlab",
     "section": "",
     "text": "A lot has happened in the 413 days since my last blog post.\nWith my colleagues, I shut down Agile in September. With my family, I packed up my house in October and moved to Norway in November. With my new colleagues, I found my feet in Equinor in December, and that adventure continues.\nHaving started my career as a geologist, then reconfigured as a geophysicist, I’m proud to call myself a developer today. I still have tons to learn about maintaining large projects in an enterprise setting, but I do make things and I consider that to be the killer feature of any hacker.\nA few people have asked me what it’s like to have a boss again, or work inside a big corporation. But really, it’s not that different from working with corporate clients. I still have a lot of self-determination, thanks to the progressive style of the awesome team I work in, and the only thing I really miss is being able to decide for myself that I’d like to spend $10k on a hackathon.\nLife outside work is full of hikes and bikes, far-flung fjords and cosy cabins. My Norwegian is a bit rusty (my wife and I lived here in the nineties) but basically functional. We found a house to live in, though it did require some downsizing.\nIn case you hadn’t noticed, this blog post is more of a postcard to the many friends and co-conspirators I’ve completely failed to keep in touch with. With luck, the coming months and years will provide many opportunities to catch up in person.\nFor now though… the blog is back! Scien✖️lab is here 🚀"
-  },
-  {
-    "objectID": "blog/software-underground-is-moving.html",
-    "href": "blog/software-underground-is-moving.html",
-    "title": "Software Underground is moving",
-    "section": "",
-    "text": "The Software Underground — a free chat group, a community, a movement — is moving to the Mattermost platform. As of right now, it lives at mattermost.softwareunderground.org.\nAfter a little over 8 years on Slack, we have taken the decision to move to the open-source Mattermost software (note, that link is only for the software, not for our instance of it). We are hosting it ourselves in Hetzner’s cloud (based in Finland), which means we own our own data… and maybe have a little more control over our destiny.\nApart from being open source, there are some other cool features of Mattermost, compared to Slack:\n\nFull support for Markdown, plus LaTeX equations.\nSyntax highlighted code blocks.\nThe concept of Teams, allowing us to host subcommunities.\n\nOh yeah, and it will cost us about a third of what we were previously spending on Slack 💸 that is, until they doubled our payments in September when apparently they changed how they count ‘active members’. Even with the 85% non-profit discount, Slack was simply too expensive. And some people were not comfortable with its ownership and general direction. For example, it recently introduced a 90-day message lifetime for teams on the free tier, all but obviating its use for smaller communities (who already had a 10,000 message limit).\nIf you’ve been looking for somewhere to hang out and chat — or even just to lurk and learn — about the digital subsurface, then Software Underground might be for you. It’s full of coders, people learning to code, earth scientists, and people learning to earth science. Check it out."
   },
   {
     "objectID": "index.html",
@@ -35,18 +42,11 @@
     "text": "Recent posts"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "blog/software-underground-is-moving.html",
+    "href": "blog/software-underground-is-moving.html",
+    "title": "Software Underground is moving",
     "section": "",
-    "text": "scien✖️lab is a microscopic scientific laboratory producing open scientific software. Matt Hall / @kwinkunks writes all the bugs, makes all the tea, and adheres to ISO 3103. Find Matt at Software Underground or feel free to get in touch at hello@scienxlab.org"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Software Underground is moving\n\n\n\n\n\nThe social network for digital geoscientists is moving house\n\n\n\n\n\n\nOct 31, 2023\n\n\nMatt Hall\n\n\n\n\n\n\n  \n\n\n\n\nHackathon season\n\n\n\n\n\nSocial coding is still the best coding\n\n\n\n\n\n\nOct 26, 2023\n\n\nMatt Hall\n\n\n\n\n\n\n  \n\n\n\n\nWelcome to scienxlab\n\n\n\n\n\nThe blog is back!\n\n\n\n\n\n\nOct 16, 2023\n\n\nMatt Hall\n\n\n\n\n\n\nNo matching items"
+    "text": "The Software Underground — a free chat group, a community, a movement — is moving to the Mattermost platform. As of right now, it lives at mattermost.softwareunderground.org.\nAfter a little over 8 years on Slack, we have taken the decision to move to the open-source Mattermost software (note, that link is only for the software, not for our instance of it). We are hosting it ourselves in Hetzner’s cloud (based in Finland), which means we own our own data… and maybe have a little more control over our destiny.\nApart from being open source, there are some other cool features of Mattermost, compared to Slack:\n\nFull support for Markdown, plus LaTeX equations.\nSyntax highlighted code blocks.\nThe concept of Teams, allowing us to host subcommunities.\n\nOh yeah, and it will cost us about a third of what we were previously spending on Slack 💸 that is, until they doubled our payments in September when apparently they changed how they count ‘active members’. Even with the 85% non-profit discount, Slack was simply too expensive. And some people were not comfortable with its ownership and general direction. For example, it recently introduced a 90-day message lifetime for teams on the free tier, all but obviating its use for smaller communities (who already had a 10,000 message limit).\nIf you’ve been looking for somewhere to hang out and chat — or even just to lurk and learn — about the digital subsurface, then Software Underground might be for you. It’s full of coders, people learning to code, earth scientists, and people learning to earth science. Check it out."
   },
   {
     "objectID": "blog/hackathon-season.html",
@@ -61,5 +61,12 @@
     "title": "Hackathon season",
     "section": "An invitation",
     "text": "An invitation\nIf you’re not quite ready to host one, come and experience one instead. The FORCE Language Modeling Hackathon is happening in Stavanger, Norway, on 30 November and 1 December 2023. I’m stoked to be hosting, with Peter Bormann organzing. The plan is to fine-tune some language models with open subsurface data from the Norwegian shelf. What would you ask a virtual assistant that has read everything about your project?\n\nFind out more and sign up!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "scien✖️lab is a microscopic scientific laboratory producing open scientific software. Matt Hall / @kwinkunks writes all the bugs, makes all the tea, and adheres to ISO 3103. Find Matt at Software Underground or feel free to get in touch at hello@scienxlab.org"
   }
 ]

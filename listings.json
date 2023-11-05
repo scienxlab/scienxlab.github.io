@@ -1,15 +1,17 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/blog.html",
     "items": [
+      "/blog/im-not-stupid-im-just.html",
       "/blog/software-underground-is-moving.html",
       "/blog/hackathon-season.html",
       "/blog/welcome-to-scienxlab.html"
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/index.html",
     "items": [
+      "/blog/im-not-stupid-im-just.html",
       "/blog/software-underground-is-moving.html",
       "/blog/hackathon-season.html",
       "/blog/welcome-to-scienxlab.html"

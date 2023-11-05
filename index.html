@@ -73,7 +73,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 3,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
@@ -182,7 +183,35 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1698710400000" data-listing-file-modified-sort="1698779751035" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1699228800000" data-listing-file-modified-sort="1699206593837" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="./blog/im-not-stupid-im-just.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="./blog/im-not-stupid-im-just.html">
+<h3 class="no-anchor listing-title">
+I’m not stupid I’m just…
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>…curious, …in a hurry, …not that interested</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/im-not-stupid-im-just.html">
+<div class="listing-date">
+Nov 6, 2023
+</div>
+<div class="listing-author">
+Matt Hall
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1698710400000" data-listing-file-modified-sort="1699206593837" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./blog/software-underground-is-moving.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -210,7 +239,7 @@ Matt Hall
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1698278400000" data-listing-file-modified-sort="1698779751035" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1698278400000" data-listing-file-modified-sort="1699206593837" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./blog/hackathon-season.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -238,7 +267,7 @@ Matt Hall
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1697414400000" data-listing-file-modified-sort="1698779751035" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1697414400000" data-listing-file-modified-sort="1699206593837" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./blog/welcome-to-scienxlab.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -270,6 +299,9 @@ Matt Hall
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -513,7 +545,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="https://creativecommons.org/licenses/by-sa/4.0/">©2023 scienxlab | Licensed CC BY-SA 4.0 | Reuse and share</a>
+    <a class="nav-link" href="https://creativecommons.org/licenses/by/4.0/">©2023 scienxlab | Licensed CC BY 4.0 | Reuse and share</a>
   </li>  
 </ul>
     </div>
