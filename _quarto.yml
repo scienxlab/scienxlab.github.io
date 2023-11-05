@@ -15,8 +15,8 @@ website:
         href: https://github.com/scienxlab
   page-footer:
     center: 
-      - text: "&copy;2023 scienxlab | Licensed CC BY-SA 4.0 | Reuse and share"
-        href: https://creativecommons.org/licenses/by-sa/4.0/
+      - text: "&copy;2023 scienxlab | Licensed CC BY 4.0 | Reuse and share"
+        href: https://creativecommons.org/licenses/by/4.0/
 
 format:
   html:
