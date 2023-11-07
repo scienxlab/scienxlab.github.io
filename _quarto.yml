@@ -5,6 +5,7 @@ website:
   title: "scienxlab"
   favicon: "images/scienxlab.png"
   site-url: "https://scienxlab.org/"
+  description: "An open access scientific computing laboratory."
   open-graph: true
   navbar:
     search: true
