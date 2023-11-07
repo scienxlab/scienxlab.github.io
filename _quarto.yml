@@ -14,7 +14,7 @@ website:
       - blog.qmd
       - about.qmd
       - icon: rss
-        href: index.xml
+        href: blog.xml
       - icon: github
         href: https://github.com/scienxlab
   page-footer:
