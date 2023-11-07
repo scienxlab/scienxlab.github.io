@@ -13,6 +13,8 @@ website:
     right:
       - blog.qmd
       - about.qmd
+      - icon: rss
+        href: index.xml
       - icon: github
         href: https://github.com/scienxlab
   page-footer:
