@@ -5,6 +5,7 @@ website:
   title: "scienxlab"
   favicon: "images/scienxlab.png"
   site-url: "https://scienxlab.org/"
+  open-graph: true
   navbar:
     search: true
     logo: "images/scienxlab.png"
