@@ -1,0 +1,46 @@
+---
+title: "The chatbots are coming"
+author: "Matt Hall"
+date: "2023-12-02"
+description: "What happened at the FORCE LLM hackathon in Stavanger"
+---
+
+🤖 **This week, seven teams of scientists and data scientists collaborated to explore ideas in large language modeling applied to a large new open dataset. Here's what happened.**
+
+[The FORCE consortium](https://www.npd.no/en/force/), which has hosted hackathons and data science contests before (read [this](https://agilescientific.com/blog/2018/9/27/force-ml-hackathon-project-round-up) and [that](https://agilescientific.com/blog/2019/10/11/force-ml-2019-project-round-up)), hosted another groundbreaking event last week &mdash; [the NPD language modeling hackathon](https://www.npd.no/en/force/events/in-person--the-npd-language-modelling-hackathon-2023/). The event took place at the NPD in Stavanger, Norway, on 29 & 30 November, and 1 December 2023.
+
+As in past years, the event was organized by a small team coordinated by **Peter Bormann** (ConocoPhillips), who not only believes passionately in the importance of open collaboration but is committed to acting on that belief 🙌 Scroll down for the rest of the organizational credits.
+
+One major feature of this event was the large new dataset the team has assembled. This contains almost three million pages of text from various reports published by the Norwegian Petroleum Directorate, [Netherlands Oil and Gas](https://www.nlog.nl/en) and [the UK North Sea Transition Authority](https://www.nstauthority.co.uk). It will soon be published under [the NLOD 2.0 licence](https://data.norge.no/nlod/en/2.0), and should be an exciting resource for the community; we just want to make sure we have taken reasonable steps to protect people's privacy before publishing it.
+
+
+## Projects
+
+Here's a very quick rundown of the teams that formed at what I believe was the first public LLM-based hackathon in Norway or in the energy sector (AkerBP [ran one of their own](https://akerbp.com/en/aker-bp-hackathon-2023-a-celebration-of-data-science/) a few weeks ago):
+
+<div style="float:right; margin-left:12px"><img src="chat-bot-gen-art.png" width="300px" /></div>
+
+- **Anonymizers** — Masking personally identifiable information in public datasets.
+- **Embedding enthusiasts** — Fine-tuning an embeddings model, using cleaner data.
+- **Zero-shot chatbots** — What kind of questions can chatbots answer about the dataset?
+- **Knowledge-graphers** — Extracting a knowledge graph and providing it to chatbots.
+- **Q&A generators** — Generating question-answer pairs for fine-tuning Q&A chatbots.
+- **Metadata extractors** — Automatically pulling metadata from the dataset.
+
+Tomorrow I will put up another post describing the projects in more detail. [When it's up, you can click here to read it!](/blog/force-hackathon-projects.html)
+
+
+## Credits
+
+It takes a community of organizers to pull off a community event like this. Here's a probably incomplete list, apologies if I missed anyone ([drop me a line!](mailto:hello@scienxlab.org)):
+
+- **Jesse Lord**, ([Kadme](https://kadme.com) and [Fabriq](https://npd.fabriqai.com)) for the dataset, which will soon be released under an open license.
+- **Lukas Mosser**, ([AkerBP](https://akerbp.com/en/)) for the starter notebook and know-how.
+- **Paul Cleverley**, [Infoscience](https://infosciencetechnologies.com) for the named entity tags.
+- **Eirik Haughom** and **Frode Odinsen**, [Microsoft](https://www.microsoft.com/) for the in-event Azure support.
+- **The NPD**, especially **Janke Ro** and those involved in FORCE.
+- It was my privilege to facilitate the proceedings, a job I am ill-suited for but enjoy anyway 😅 Thank you to Peter for the opportunity!
+
+---
+
+<span style="font-size:80%">_Generated art by Dylan Loss_</span>
