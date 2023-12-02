@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/blog/the-chatbots-are-coming/index.html",
       "/blog/a-wind-powered-hackathon.html",
       "/blog/im-not-stupid-im-just.html",
       "/blog/software-underground-is-moving.html",
@@ -12,6 +13,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/the-chatbots-are-coming/index.html",
       "/blog/a-wind-powered-hackathon.html",
       "/blog/im-not-stupid-im-just.html",
       "/blog/software-underground-is-moving.html",

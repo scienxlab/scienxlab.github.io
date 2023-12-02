@@ -10,7 +10,57 @@
 <atom:link href="https://scienxlab.org/blog.xml" rel="self" type="application/rss+xml"/>
 <description>An open access scientific computing laboratory.</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Mon, 27 Nov 2023 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 02 Dec 2023 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>The chatbots are coming</title>
+  <dc:creator>Matt Hall</dc:creator>
+  <link>https://scienxlab.org/blog/the-chatbots-are-coming/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>🤖 <strong>This week, seven teams of scientists and data scientists collaborated to explore ideas in large language modeling applied to a large new open dataset. Here’s what happened.</strong></p>
+<p><a href="https://www.npd.no/en/force/">The FORCE consortium</a>, which has hosted hackathons and data science contests before (read <a href="https://agilescientific.com/blog/2018/9/27/force-ml-hackathon-project-round-up">this</a> and <a href="https://agilescientific.com/blog/2019/10/11/force-ml-2019-project-round-up">that</a>), hosted another groundbreaking event last week — <a href="https://www.npd.no/en/force/events/in-person--the-npd-language-modelling-hackathon-2023/">the NPD language modeling hackathon</a>. The event took place at the NPD in Stavanger, Norway, on 29 &amp; 30 November, and 1 December 2023.</p>
+<p>As in past years, the event was organized by a small team coordinated by <strong>Peter Bormann</strong> (ConocoPhillips), who not only believes passionately in the importance of open collaboration but is committed to acting on that belief 🙌 Scroll down for the rest of the organizational credits.</p>
+<p>One major feature of this event was the large new dataset the team has assembled. This contains almost three million pages of text from various reports published by the Norwegian Petroleum Directorate, <a href="https://www.nlog.nl/en">Netherlands Oil and Gas</a> and <a href="https://www.nstauthority.co.uk">the UK North Sea Transition Authority</a>. It will soon be published under <a href="https://data.norge.no/nlod/en/2.0">the NLOD 2.0 licence</a>, and should be an exciting resource for the community; we just want to make sure we have taken reasonable steps to protect people’s privacy before publishing it.</p>
+<section id="projects" class="level2">
+<h2 class="anchored" data-anchor-id="projects">Projects</h2>
+<p>Here’s a very quick rundown of the teams that formed at what I believe was the first public LLM-based hackathon in Norway or in the energy sector (AkerBP <a href="https://akerbp.com/en/aker-bp-hackathon-2023-a-celebration-of-data-science/">ran one of their own</a> a few weeks ago):</p>
+<div style="float:right; margin-left:12px">
+<img src="https://scienxlab.org/blog/the-chatbots-are-coming/chat-bot-gen-art.png" width="300px">
+</div>
+<ul>
+<li><strong>Anonymizers</strong> — Masking personally identifiable information in public datasets.</li>
+<li><strong>Embedding enthusiasts</strong> — Fine-tuning an embeddings model, using cleaner data.</li>
+<li><strong>Zero-shot chatbots</strong> — What kind of questions can chatbots answer about the dataset?</li>
+<li><strong>Knowledge-graphers</strong> — Extracting a knowledge graph and providing it to chatbots.</li>
+<li><strong>Q&amp;A generators</strong> — Generating question-answer pairs for fine-tuning Q&amp;A chatbots.</li>
+<li><strong>Metadata extractors</strong> — Automatically pulling metadata from the dataset.</li>
+</ul>
+<p>Tomorrow I will put up another post describing the projects in more detail. <a href="../../blog/force-hackathon-projects.html">When it’s up, you can click here to read it!</a></p>
+</section>
+<section id="credits" class="level2">
+<h2 class="anchored" data-anchor-id="credits">Credits</h2>
+<p>It takes a community of organizers to pull off a community event like this. Here’s a probably incomplete list, apologies if I missed anyone (<a href="mailto:hello@scienxlab.org">drop me a line!</a>):</p>
+<ul>
+<li><strong>Jesse Lord</strong>, (<a href="https://kadme.com">Kadme</a> and <a href="https://npd.fabriqai.com">Fabriq</a>) for the dataset, which will soon be released under an open license.</li>
+<li><strong>Lukas Mosser</strong>, (<a href="https://akerbp.com/en/">AkerBP</a>) for the starter notebook and know-how.</li>
+<li><strong>Paul Cleverley</strong>, <a href="https://infosciencetechnologies.com">Infoscience</a> for the named entity tags.</li>
+<li><strong>Eirik Haughom</strong> and <strong>Frode Odinsen</strong>, <a href="https://www.microsoft.com/">Microsoft</a> for the in-event Azure support.</li>
+<li><strong>The NPD</strong>, especially <strong>Janke Ro</strong> and those involved in FORCE.</li>
+<li>It was my privilege to facilitate the proceedings, a job I am ill-suited for but enjoy anyway 😅 Thank you to Peter for the opportunity!</li>
+</ul>
+<hr>
+<p><span style="font-size:80%"><em>Generated art by Dylan Loss</em></span></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://scienxlab.org/blog/the-chatbots-are-coming/index.html</guid>
+  <pubDate>Sat, 02 Dec 2023 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>A wind-powered hackathon</title>
   <dc:creator>Matt Hall</dc:creator>
@@ -113,12 +163,19 @@
 <p>I’m on my way home from a hackathon right now, my first one for about a year. It was wonderful, just like always. Lots of first-timers, which I love to see, and lots of brilliant ideas. It’s absolutely the best possible way to spend time with colleagues. If you haven’t experienced it, you should organize one at your place of work. <a href="https://hackmd.io/dUYWLDDISnOwjEVAwdZKJg">Here’s how.</a> Go on, I dare you 🚀</p>
 <section id="an-invitation" class="level2">
 <h2 class="anchored" data-anchor-id="an-invitation">An invitation</h2>
-<p>If you’re not quite ready to host one, come and experience one instead. <a href="https://www.npd.no/en/force/events/in-person--the-npd-language-modelling-hackathon-2023/">The FORCE Language Modeling Hackathon</a> is happening in Stavanger, Norway, on 30 November and 1 December 2023. I’m stoked to be hosting, with Peter Bormann organzing. The plan is to fine-tune some language models with open subsurface data from the Norwegian shelf. <strong>What would you ask a virtual assistant that has read everything about <em>your</em> project?</strong></p>
+<p>If you’re not quite ready to host one, come and experience one instead. <a href="https://www.npd.no/en/force/events/in-person--the-npd-language-modelling-hackathon-2023/">The FORCE Language Modeling Hackathon</a> is happening in Stavanger, Norway, on 30 November and 1 December 2023. I’m stoked to be hosting, with Peter Bormann organizing. The plan is to fine-tune some language models with open subsurface data from the Norwegian shelf. <strong>What would you ask a virtual assistant that has read everything about <em>your</em> project?</strong></p>
 <div style="text-align: center">
 <a href="https://www.npd.no/en/force/events/in-person--the-npd-language-modelling-hackathon-2023/"><strong>Find out more and sign up!</strong></a>
 </div>
+<hr>
+<section id="changelog" class="level3">
+<h3 class="anchored" data-anchor-id="changelog">Changelog</h3>
+<ul>
+<li><strong>20230-12-01</strong> — fixed typo</li>
+</ul>
 
 
+</section>
 </section>
 
  ]]></description>
