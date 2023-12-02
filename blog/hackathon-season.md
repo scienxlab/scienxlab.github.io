@@ -15,6 +15,12 @@ I'm on my way home from a hackathon right now, my first one for about a year. It
 
 ## An invitation
 
-If you're not quite ready to host one, come and experience one instead. [The FORCE Language Modeling Hackathon](https://www.npd.no/en/force/events/in-person--the-npd-language-modelling-hackathon-2023/) is happening in Stavanger, Norway, on 30 November and 1 December 2023. I'm stoked to be hosting, with Peter Bormann organzing. The plan is to fine-tune some language models with open subsurface data from the Norwegian shelf. **What would you ask a virtual assistant that has read everything about _your_ project?**
+If you're not quite ready to host one, come and experience one instead. [The FORCE Language Modeling Hackathon](https://www.npd.no/en/force/events/in-person--the-npd-language-modelling-hackathon-2023/) is happening in Stavanger, Norway, on 30 November and 1 December 2023. I'm stoked to be hosting, with Peter Bormann organizing. The plan is to fine-tune some language models with open subsurface data from the Norwegian shelf. **What would you ask a virtual assistant that has read everything about _your_ project?**
 
 <div style="text-align: center">[**Find out more and sign up!**](https://www.npd.no/en/force/events/in-person--the-npd-language-modelling-hackathon-2023/)</div>
+
+---
+
+### Changelog
+
+- **20230-12-01** — fixed typo
