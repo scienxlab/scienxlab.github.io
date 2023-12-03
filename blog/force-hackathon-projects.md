@@ -1,7 +1,7 @@
 ---
 title: "FORCE hackathon project round-up"
 author: "Matt Hall"
-date: "2023-12-03"
+date: "2023-12-04"
 description: "All the projects at the FORCE LLM hackathon in Stavanger"
 ---
 
