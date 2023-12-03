@@ -18,8 +18,6 @@ One major feature of this event was the large new dataset the team has assembled
 
 Here's a very quick rundown of the teams that formed at what I believe was the first public LLM-based hackathon in Norway or in the energy sector (AkerBP [ran one of their own](https://akerbp.com/en/aker-bp-hackathon-2023-a-celebration-of-data-science/) a few weeks ago):
 
-<div style="float:right; margin-left:12px"><img src="chat-bot-gen-art.png" width="300px" /></div>
-
 - **Anonymizers** — Masking personally identifiable information in public datasets.
 - **Embedding enthusiasts** — Fine-tuning an embeddings model, using cleaner data.
 - **Zero-shot chatbots** — What kind of questions can chatbots answer about the dataset?
@@ -40,7 +38,3 @@ It takes a community of organizers to pull off a community event like this. Here
 - **Eirik Haughom** and **Frode Odinsen**, [Microsoft](https://www.microsoft.com/) for the in-event Azure support.
 - **The NPD**, especially **Janke Ro** and those involved in FORCE.
 - It was my privilege to facilitate the proceedings, a job I am ill-suited for but enjoy anyway 😅 Thank you to Peter for the opportunity!
-
----
-
-<span style="font-size:80%">_Generated art by Dylan Loss_</span>
