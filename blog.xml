@@ -42,12 +42,12 @@
 <section id="knowledge-graphers" class="level3">
 <h3 class="anchored" data-anchor-id="knowledge-graphers">Knowledge-graphers</h3>
 <p><strong>Hammad Ali</strong>, <strong>Catherine Adams</strong>, <strong>Henrik Busengdal</strong>, <strong>Anil Dhiman</strong> (all Sopra Steria), <strong>Thomas Crabie</strong>, <strong>Adam Hammoumi</strong>, <strong>Aziz Ben Ammar</strong>, <strong>Ilyas Tib</strong> (all IFPEN), <strong>Lars Lukerstuen</strong> (Bouvet), <strong>Erich Suter</strong> (Equinor), and <strong>Johannes Åsheim</strong> (Fabriq).</p>
-<p>The team applied a deep technology stack to exploring the usefulness of graph theory and semantic <em>subject-predicate-object</em> triples in querying large language models. They also explored ways to extract both knowledge graphs and sample question-answer pairs from datasets like the one we had. The pipeline had several elements including:</p>
+<p>The team applied a deep technology stack to exploring the usefulness of graph theory and semantic <em>subject-predicate-object</em> triples in querying large language models. They also explored ways to extract both knowledge graphs and sample questions that would exploit knowledge from multiple documents from datasets like the one we had. With this foundation, the query response pipeline had several elements including:</p>
 <ul>
 <li>Use the Azure OpenAI API to convert a user query to a Cypher query (<a href="https://neo4j.com/developer/cypher/">Cypher</a> is <a href="https://neo4j.com">Neo4J’s</a> graph query language).</li>
 <li>Apply the query to the Neo4j graph database, and retrieve the result.</li>
 <li>Simultaneously convert the user query to embeddings and fetch the nearest neighbours from the vector database.</li>
-<li>Use ChatGPT to synthesize a response based on the graph and embedding responses.</li>
+<li>Use ChatGPT to synthesize a response based on the graph and embedding responses, and providing references for its answers.</li>
 </ul>
 <p><a href="https://github.com/ilyas-ifp/Stavanger_hackathon">Check out the team’s GitHub repo here.</a></p>
 <p>🌟 <strong>Special mention</strong> The jury was impressed by the project management skills of this large team, all of whom contributed to the end result. Their graph-based approach has clear value and utility in these problems.</p>
@@ -71,6 +71,13 @@
 <p>⭐ The team presented a nice story, grounded in the perspective of a subsurface professional. This teams work promises to be useful to anyone picking up an NLP project in our domain.</p>
 <hr>
 <p><strong>That’s it for this event!</strong> Many thanks to all the participants, who worked so hard to learn new things, put them into action, then share what they learned with everyone else. It was, as always, inspiring to see. I’m sure there will be more events like this in the future, so stay tuned and look forward to the next one 🚀</p>
+<hr>
+</section>
+<section id="changelog" class="level3">
+<h3 class="anchored" data-anchor-id="changelog">Changelog</h3>
+<ul>
+<li><strong>2023-12-04</strong> — corrected record of exactly what the knowledge graph team did</li>
+</ul>
 
 
 </section>
