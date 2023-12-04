@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/blog/force-hackathon-projects.html",
       "/blog/the-chatbots-are-coming/index.html",
       "/blog/a-wind-powered-hackathon.html",
       "/blog/im-not-stupid-im-just.html",
@@ -13,6 +14,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/force-hackathon-projects.html",
       "/blog/the-chatbots-are-coming/index.html",
       "/blog/a-wind-powered-hackathon.html",
       "/blog/im-not-stupid-im-just.html",
