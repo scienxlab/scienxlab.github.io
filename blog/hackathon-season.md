@@ -23,4 +23,4 @@ If you're not quite ready to host one, come and experience one instead. [The FOR
 
 ### Changelog
 
-- **20230-12-01** — fixed typo
+- **2023-12-01** — fixed typo
