@@ -35,12 +35,12 @@ The dream many people have when they first meet a smart chatbot is to be able to
 
 **Hammad Ali**, **Catherine Adams**, **Henrik Busengdal**, **Anil Dhiman** (all Sopra Steria), **Thomas Crabie**, **Adam Hammoumi**, **Aziz Ben Ammar**, **Ilyas Tib** (all IFPEN), **Lars Lukerstuen** (Bouvet), **Erich Suter** (Equinor), and **Johannes Åsheim** (Fabriq).
 
-The team applied a deep technology stack to exploring the usefulness of graph theory and semantic _subject-predicate-object_ triples in querying large language models. They also explored ways to extract both knowledge graphs and sample question-answer pairs from datasets like the one we had. The pipeline had several elements including:
+The team applied a deep technology stack to exploring the usefulness of graph theory and semantic _subject-predicate-object_ triples in querying large language models. They also explored ways to extract both knowledge graphs and sample questions that would exploit knowledge from multiple documents from datasets like the one we had. With this foundation, the query response pipeline had several elements including:
 
 - Use the Azure OpenAI API to convert a user query to a Cypher query ([Cypher](https://neo4j.com/developer/cypher/) is [Neo4J's](https://neo4j.com) graph query language).
 - Apply the query to the Neo4j graph database, and retrieve the result.
 - Simultaneously convert the user query to embeddings and fetch the nearest neighbours from the vector database.
-- Use ChatGPT to synthesize a response based on the graph and embedding responses.
+- Use ChatGPT to synthesize a response based on the graph and embedding responses, and providing references for its answers.
 
 [Check out the team's GitHub repo here.](https://github.com/ilyas-ifp/Stavanger_hackathon)
 
@@ -75,3 +75,9 @@ All of the teams faced a noise problem and needed to reduce the training dataset
 ---
 
 **That's it for this event!** Many thanks to all the participants, who worked so hard to learn new things, put them into action, then share what they learned with everyone else. It was, as always, inspiring to see. I'm sure there will be more events like this in the future, so stay tuned and look forward to the next one 🚀
+
+---
+
+### Changelog
+
+- **2023-12-04** — corrected record of exactly what the knowledge graph team did
