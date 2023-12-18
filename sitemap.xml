@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://scienxlab.org/about.html</loc>
-    <lastmod>2023-12-04T09:36:25.470Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scienxlab.org/index.html</loc>
-    <lastmod>2023-12-04T09:36:24.738Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scienxlab.org/blog/welcome-to-scienxlab.html</loc>
-    <lastmod>2023-12-04T09:36:23.862Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scienxlab.org/blog/im-not-stupid-im-just.html</loc>
-    <lastmod>2023-12-04T09:36:23.258Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scienxlab.org/blog/a-wind-powered-hackathon.html</loc>
-    <lastmod>2023-12-04T09:36:22.642Z</lastmod>
+    <loc>https://scienxlab.org/blog/the-chatbots-are-coming/index.html</loc>
+    <lastmod>2023-12-18T08:58:46.417Z</lastmod>
   </url>
   <url>
     <loc>https://scienxlab.org/blog/force-hackathon-projects.html</loc>
-    <lastmod>2023-12-04T09:36:22.058Z</lastmod>
+    <lastmod>2023-12-18T08:58:45.757Z</lastmod>
   </url>
   <url>
-    <loc>https://scienxlab.org/blog/software-underground-is-moving.html</loc>
-    <lastmod>2023-12-04T09:36:22.946Z</lastmod>
+    <loc>https://scienxlab.org/blog/a-wind-powered-hackathon.html</loc>
+    <lastmod>2023-12-18T08:58:45.053Z</lastmod>
   </url>
   <url>
-    <loc>https://scienxlab.org/blog/the-chatbots-are-coming/index.html</loc>
-    <lastmod>2023-12-04T09:36:23.582Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scienxlab.org/blog/hackathon-season.html</loc>
-    <lastmod>2023-12-04T09:36:24.154Z</lastmod>
+    <loc>https://scienxlab.org/blog/im-not-stupid-im-just.html</loc>
+    <lastmod>2023-12-18T08:58:44.449Z</lastmod>
   </url>
   <url>
     <loc>https://scienxlab.org/blog.html</loc>
-    <lastmod>2023-12-04T09:36:25.226Z</lastmod>
+    <lastmod>2023-12-18T08:58:43.597Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scienxlab.org/about.html</loc>
+    <lastmod>2023-12-18T08:58:42.692Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scienxlab.org/index.html</loc>
+    <lastmod>2023-12-18T08:58:44.145Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scienxlab.org/blog/hackathon-season.html</loc>
+    <lastmod>2023-12-18T08:58:44.765Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scienxlab.org/blog/software-underground-is-moving.html</loc>
+    <lastmod>2023-12-18T08:58:45.341Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scienxlab.org/blog/welcome-to-scienxlab.html</loc>
+    <lastmod>2023-12-18T08:58:46.085Z</lastmod>
   </url>
 </urlset>
