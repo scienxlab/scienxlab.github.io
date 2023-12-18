@@ -62,6 +62,8 @@ Recognizing that the long-term goal of a domain-specific chatbot will take a lot
 
 Based on a sample of 550 questions, the team estimated that about 80% of the pairs were of sufficient quality to meet their needs. In a nod to accessibility and sustainability, the team estimated the compute cost of generating the collection at USD 36 — plus about 75 person-hours of labour!
 
+[Check out the team's GitHub repo here.](https://github.com/NoB0/NorthSeaPQA-force-npd-hackathon)
+
 🌟 **Special mention** The team did a terrific job of explaining and justifying their goal, and the jury were impressed by this impactful contribution to the community.
 
 ### Metadata extractors
