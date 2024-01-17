@@ -5,7 +5,7 @@ date: "2024-01-17"
 description: "What went down at the DeepWind hackathon in Trondheim"
 ---
 
-**The [DeepWind Hackathon](https://scienxlab.org/blog/a-wind-powered-hackathon.html) happened! It was just as awesome as I thought it would be, with the usual mix of diverse expertise and insght from across Europe and the Americas. I hope it's the first of many wind-related events, stay tuned!**
+**The [DeepWind Hackathon](https://scienxlab.org/blog/a-wind-powered-hackathon.html) happened! It was just as awesome as I thought it would be, with the usual mix of diverse expertise and insight from across Europe and the Americas. I hope it's the first of many wind-related events, stay tuned!**
 
 I'm new to the wind community, so there was not a lot of chance to feel out projects ahead of this event. So after saying Hello and finding coffee, we began with an hour or so of project pitches, followed by half-an-hour of negotiation and clarification. This simple process is usually enough to land on teams and projects, and this time was no exception. Read about the projects, and the hackers behind them, below.
 
@@ -21,7 +21,7 @@ As always in these events, it was impressive to see small groups of enthusiastic
 
 ## Unicorn hackers — A digital twin project
 
-**Rudy Yuksel** (UMaine), **Diederik van Binsbergen** (NTNU/VUB), **Giovanni Aiosa do Amaral** (University of São Paolo), **Florian Stadtmann** (NTNU), **Hallgrim Ludvigsen** (Enerbits), **Olav Kihle** (NTNU), **Daniel Yang Hansen** (NTNU).
+**Rudy Yuksel** (UMaine), **Diederik van Binsbergen** (NTNU/VUB), **Giovanni Aiosa do Amaral** (University of São Paulo), **Florian Stadtmann** (NTNU), **Hallgrim Ludvigsen** (Enerbits), **Olav Kihle** (NTNU), **Daniel Yang Hansen** (NTNU).
 
 With the goal of building a farm-scale digital twin, the team attempted to integrate several datasets and models, and succeeded in building a strong foundation on which to continue iterating. Their system starts with stochastically sampling wind speed and direction from historical data. This feeds a wake model for the wind farm, modeled using FAST.Farm https://github.com/OpenFAST/openfast/tree/main. The result in turn informs an original damage-accumulation fatigue model of the main bearings, in order to predict maintenance needs for each turbine. Finally, a marine safety model searches for an optimal maintenance schedule, using historical wave and weather data. The team also looked at strategies for delaying maintenance by changing operating parameters, for example to reduce the chance of failure during winter.
 
@@ -30,7 +30,7 @@ The team made impressive progress on an ambitious goal, implementing an original
 
 ## Energy game project - Design
 
-**Fabian Anstock** (HAW Hamburg), **Ajit Pillai** (University of Exeter), **Mila Teixeira De Oliveira** (Equinor), **Olga Usachova** (NTNU), **Ivana Lapsanka** (BAM), **Daria Cislo** (University of Edinburgh).
+**Fabian Anstock** (HAW Hamburg), **Ajit Pillai** (University of Exeter), **Maria Emilia (Mila) Teixeira De Oliveira** (Equinor), **Olga Usachova** (NTNU), **Ivana Lapsanka** (BAM), **Daria Cislo** (University of Edinburgh).
 
 This was one of two projects focused on creating "the best game of all time" — an educational energy strategy game that Morten Fredriksen had proposed as an outreach aid. The team quickly adopted [the energy trilemma](https://www.worldenergy.org/transition-toolkit/world-energy-trilemma-index), which captures the tension between the equity, sustainability and security of energy sources, as their framework for the design of this game.
 
