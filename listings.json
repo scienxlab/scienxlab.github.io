@@ -1,7 +1,8 @@
 [
   {
-    "listing": "/blog.html",
+    "listing": "/index.html",
     "items": [
+      "/blog/deepwind-hackathon-projects/index.html",
       "/blog/force-hackathon-projects.html",
       "/blog/the-chatbots-are-coming/index.html",
       "/blog/a-wind-powered-hackathon.html",
@@ -12,8 +13,9 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/blog.html",
     "items": [
+      "/blog/deepwind-hackathon-projects/index.html",
       "/blog/force-hackathon-projects.html",
       "/blog/the-chatbots-are-coming/index.html",
       "/blog/a-wind-powered-hackathon.html",
