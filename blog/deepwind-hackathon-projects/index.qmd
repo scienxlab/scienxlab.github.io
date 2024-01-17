@@ -36,6 +36,8 @@ This was one of two projects focused on creating "the best game of all time" —
 
 Accordingly, most of the work by this team was analog, collecting open data on average price-per-kWh (reflecting equity), average emissions penalty (sustainability), and the relative reliability and responsiveness (security) of various energy sources relevant to the Norwegian grid: coal, oil, gas, nuclear, hydro, solar, and of course offshore and onshore wind. Scaling the axes of the trilemma to the 0–10 range and multiplying them would provide the final score for a player's strategy.
 
+![Game designers game designing / Photo: Daniel Albert SINTEF](./deepwind-hackers.jpeg)
+
 
 ## Energy game project - MVP
 
@@ -46,6 +48,8 @@ Accordingly, most of the work by this team was analog, collecting open data on a
 The energy strategy game was more than just clever game design — a second team  implemented a prototype game. The player is challenged with meeting the energy demand of Norway for the first week in January 2024. Adding a baseload of nuclear energy is a good start, but nuclear reactors have historically not been very responsive to high-frequency load changes. Wind and solar can provide substantial energy, and at variable but uncontrollable output levels. Gas is cheap and can follow load perfectly, but has a high carbon penalty... and so on.
 
 There was no shortage of feature requests and ideas, the future of this idea is only limited by developer time! And, while there are already sustainable energy games on the web and on Steam ([here's one from ENEL](https://resources.enelgreenpower.com/game/#/)), the down-to-earth realism and real-time data possibilities of this game captured people's imaginations. Maybe someone should fund this one :)
+
+![Game developers game developing / Photo: Daniel Albert SINTEF](./deepwind-hackers-2.jpeg)
 
 
 ## Thank you
