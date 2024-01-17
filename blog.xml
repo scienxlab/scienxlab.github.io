@@ -53,6 +53,12 @@ Looking for other digital wind enthusiasts?
 <p><strong>Fabian Anstock</strong> (HAW Hamburg), <strong>Ajit Pillai</strong> (University of Exeter), <strong>Maria Emilia (Mila) Teixeira De Oliveira</strong> (Equinor), <strong>Olga Usachova</strong> (NTNU), <strong>Ivana Lapsanka</strong> (BAM), <strong>Daria Cislo</strong> (University of Edinburgh).</p>
 <p>This was one of two projects focused on creating “the best game of all time” — an educational energy strategy game that Morten Fredriksen had proposed as an outreach aid. The team quickly adopted <a href="https://www.worldenergy.org/transition-toolkit/world-energy-trilemma-index">the energy trilemma</a>, which captures the tension between the equity, sustainability and security of energy sources, as their framework for the design of this game.</p>
 <p>Accordingly, most of the work by this team was analog, collecting open data on average price-per-kWh (reflecting equity), average emissions penalty (sustainability), and the relative reliability and responsiveness (security) of various energy sources relevant to the Norwegian grid: coal, oil, gas, nuclear, hydro, solar, and of course offshore and onshore wind. Scaling the axes of the trilemma to the 0–10 range and multiplying them would provide the final score for a player’s strategy.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://scienxlab.org/blog/deepwind-hackathon-projects/deepwind-hackers.jpeg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Game designers game designing / Photo: Daniel Albert SINTEF</figcaption>
+</figure>
+</div>
 </section>
 <section id="energy-game-project---mvp" class="level2">
 <h2 class="anchored" data-anchor-id="energy-game-project---mvp">Energy game project - MVP</h2>
@@ -60,6 +66,12 @@ Looking for other digital wind enthusiasts?
 <p><a href="https://github.com/MortFred/hackaton-energy-game">GitHub repo is here.</a></p>
 <p>The energy strategy game was more than just clever game design — a second team implemented a prototype game. The player is challenged with meeting the energy demand of Norway for the first week in January 2024. Adding a baseload of nuclear energy is a good start, but nuclear reactors have historically not been very responsive to high-frequency load changes. Wind and solar can provide substantial energy, and at variable but uncontrollable output levels. Gas is cheap and can follow load perfectly, but has a high carbon penalty… and so on.</p>
 <p>There was no shortage of feature requests and ideas, the future of this idea is only limited by developer time! And, while there are already sustainable energy games on the web and on Steam (<a href="https://resources.enelgreenpower.com/game/#/">here’s one from ENEL</a>), the down-to-earth realism and real-time data possibilities of this game captured people’s imaginations. Maybe someone should fund this one :)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://scienxlab.org/blog/deepwind-hackathon-projects/deepwind-hackers-2.jpeg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Game developers game developing / Photo: Daniel Albert SINTEF</figcaption>
+</figure>
+</div>
 </section>
 <section id="thank-you" class="level2">
 <h2 class="anchored" data-anchor-id="thank-you">Thank you</h2>
