@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/blog/no-more-ai-cliches/index.html",
       "/blog/deepwind-hackathon-projects/index.html",
       "/blog/force-hackathon-projects.html",
       "/blog/the-chatbots-are-coming/index.html",
@@ -15,6 +16,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/no-more-ai-cliches/index.html",
       "/blog/deepwind-hackathon-projects/index.html",
       "/blog/force-hackathon-projects.html",
       "/blog/the-chatbots-are-coming/index.html",
