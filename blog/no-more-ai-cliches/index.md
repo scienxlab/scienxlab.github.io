@@ -72,3 +72,9 @@ Alexa Steinbrück / Better Images of AI / Explainable AI / CC-BY 4.0
 - The Royal Society (2017). _Portrayals & Perceptions of AI and Why They Matter_, white paper, [available online](https://royalsociety.org/-/media/policy/projects/ai-narratives/AI-narratives-workshop-findings.pdf).
 - Schmitt, P (2021). Blueprints of Intelligence. _Noema Magazine_ (Berggruen), [available online](https://www.noemamag.com/blueprints-of-intelligence/)
 - Romele, A (2022). Images of Artificial Intelligence: a Blind Spot in AI Ethics. _Philosophy & Technology_ **35** (4). [DOI: https://doi.org/10.1007/s13347-022-00498-3](https://doi.org/10.1007/s13347-022-00498-3)
+
+---
+
+### Changelog
+
+- **2024-02-07** — changed 'Caucasian' to 'Western European'
