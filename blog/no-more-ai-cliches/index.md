@@ -30,7 +30,7 @@ To be fair, one of the images has some information on it. And some contain actua
 - A neural network (1/72, 1.3%)
 - Computers (1/72, 1.3%)
 
-It looks pretty bad from afar &mdash; look closer, and it gets worse. The creepy robots are nearly always white, with Caucasian features and completely devoid of personality or facial expressions. Not only do they appear to have genders, but they are overtly sexualized: the "men" are muscular with chiseled jaws, and the women are conventionally beautiful, often with a human face. And I haven't counted but I'm willing to bet that most of those in assistant roles are "female". 
+It looks pretty bad from afar &mdash; look closer, and it gets worse. The creepy robots are nearly always white, with Western European features and completely devoid of personality or facial expressions. Not only do they appear to have genders, but they are overtly sexualized: the "men" are muscular with chiseled jaws, and the women are conventionally beautiful, often with a human face. And I haven't counted but I'm willing to bet that most of those in assistant roles are "female". 
 
 None of the images contains:
 
