@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/blog.html",
     "items": [
       "/blog/no-more-ai-cliches/index.html",
       "/blog/deepwind-hackathon-projects/index.html",
@@ -14,7 +14,7 @@
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/index.html",
     "items": [
       "/blog/no-more-ai-cliches/index.html",
       "/blog/deepwind-hackathon-projects/index.html",
