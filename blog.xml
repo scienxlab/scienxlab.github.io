@@ -10,7 +10,116 @@
 <atom:link href="https://scienxlab.org/blog.xml" rel="self" type="application/rss+xml"/>
 <description>An open access scientific computing laboratory.</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Tue, 06 Feb 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 26 Feb 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Practice your form</title>
+  <dc:creator>Matt Hall</dc:creator>
+  <link>https://scienxlab.org/blog/practice-form.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><strong>Years ago, I learned karate.</strong> I never really got into the sparring side of the sport and eventually stopped, but I loved the mindful practice involved in one aspect of it: <strong>kata</strong>, or 形. The word means ‘form’, and the focus is on quality, not speed, power, or quantity. I spent hours in a squash court at the YMCA in Calgary, learning the elements of karate, one move at a time, very slowly.</p>
+<p>Later, teaching Python classes and enjoying the <a href="https://adventofcode.com/">Advent of Code</a> challenges every December, I made some ‘mindful practice’ exercises for my students, mostly geoscientists and engineers. I called them <strong>kata</strong>.</p>
+<div style="text-align: center">
+<a href="https://kata.scienxlab.org/"><strong>形 Check out the kata.</strong></a>
+</div>
+<section id="lots-to-choose-from" class="level2">
+<h2 class="anchored" data-anchor-id="lots-to-choose-from">Lots to choose from</h2>
+<p>Today there are 13 challenges, some of them more ‘geo’ than others. Here are some of them:</p>
+<ul>
+<li><code>sequence</code> — Analyse a sequence of rocks to find patterns. Good first problem.</li>
+<li><code>wireline</code> — Automatically detect bed boundaries in a density log.</li>
+<li><code>sample-names</code> — Ah, the realities of data-loading!</li>
+<li><code>prospecting</code> — Combine information from several map layers.</li>
+<li><code>photomicrograph</code> — An introduction to image processing and analysis.</li>
+<li><code>regression</code> — A single-variable machine learning regression problem.</li>
+</ul>
+<p>One slightly funky aspect of the challenges is that you have to interact with a web API to play, making HTTP GET requests to read your data and submit your answers. The server will tell you if you got the question right or not.</p>
+<p>💡 <strong>If you want to try one, <a href="https://colab.research.google.com/drive/1eP68NTV-GA3R-BYUh-CUxcgYDQ5IuetS">this Google Colab notebook</a> will help you get started. Or read on for some tips…</strong></p>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<p>To get started, you don’t need an account or anything, the server doesn’t know who you are. Just think up a random-ish key and use that to identify yourself (so the server can match your answer to the data you received).</p>
+<p>As a quick example, here’s how you can get the data for the first challenge, called <code>sequence</code>:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> requests</span>
+<span id="cb1-2"></span>
+<span id="cb1-3">uri <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'https://kata.scienxlab.org/challenge/sequence'</span></span>
+<span id="cb1-4"></span>
+<span id="cb1-5">params <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {</span>
+<span id="cb1-6">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'key'</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'honey badger'</span>  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Choose a unique-ish key.</span></span>
+<span id="cb1-7">}</span>
+<span id="cb1-8"></span>
+<span id="cb1-9">r <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> requests.get(url, params)</span>
+<span id="cb1-10"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(r.text)</span></code></pre></div>
+<p>Now <code>r.text</code> holds a long text string with your input data.</p>
+<p>To send an answer, update the <code>params</code> dictionary with the question number and your answer:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1">params.update({<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'question'</span>: <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'answer'</span>: <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">42</span>})</span>
+<span id="cb2-2">r <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> requests.get(url, params)</span>
+<span id="cb2-3"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(r.text)</span></code></pre></div>
+<p>The server will tell you how you did. In this case: <code>Incorrect. Your answer is too low.</code></p>
+<p>If you get stuck on a question, you can ask the server for a clue by sending a question number but no answer:</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">params <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {</span>
+<span id="cb3-2">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'key'</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'honey badger'</span>,</span>
+<span id="cb3-3">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'question'</span>: <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,</span>
+<span id="cb3-4">}</span>
+<span id="cb3-5">r <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> requests.get(url, params)</span>
+<span id="cb3-6"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(r.text)</span></code></pre></div>
+<p><strong>If you decide to give it a go, then good luck and have fun! And if you fancy trying to <em>write</em> a challenge — a challenge in itself! — then check out the <a href="https://github.com/scienxlab/kata-dev"><code>kata-dev</code> repo</a>.</strong></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://scienxlab.org/blog/practice-form.html</guid>
+  <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>No more AI clichés</title>
   <dc:creator>Matt Hall</dc:creator>

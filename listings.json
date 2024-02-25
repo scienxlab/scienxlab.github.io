@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/practice-form.html",
       "/blog/no-more-ai-cliches/index.html",
       "/blog/deepwind-hackathon-projects/index.html",
       "/blog/force-hackathon-projects.html",
@@ -16,6 +17,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/blog/practice-form.html",
       "/blog/no-more-ai-cliches/index.html",
       "/blog/deepwind-hackathon-projects/index.html",
       "/blog/force-hackathon-projects.html",

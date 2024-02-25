@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Matt Hall">
+<meta name="dcterms.date" content="2024-02-26">
+<meta name="description" content="Coding challenges for scientists and engineers">
 
-<title>scienxlab - Blog</title>
+<title>scienxlab - Practice your form</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,28 +23,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/scienxlab.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/scienxlab.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,82 +104,32 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<style>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(../images/banner.png);
+background-size: cover;
       }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
+</style>
 
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="scienxlab" href="blog.xml" data-external="1"><meta property="og:title" content="scienxlab - Blog">
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="scienxlab - Practice your form">
+<meta property="og:description" content="Coding challenges for scientists and engineers">
 <meta property="og:site_name" content="scienxlab">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/scienxlab.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/scienxlab.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">scienxlab</span>
     </a>
   </div>
@@ -155,15 +140,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./blog.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../blog.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -180,325 +165,102 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Practice your form</h1>
+                  <div>
+        <div class="description">
+          Coding challenges for scientists and engineers
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Matt Hall </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 26, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div></div></div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p><strong>Years ago, I learned karate.</strong> I never really got into the sparring side of the sport and eventually stopped, but I loved the mindful practice involved in one aspect of it: <strong>kata</strong>, or 形. The word means ‘form’, and the focus is on quality, not speed, power, or quantity. I spent hours in a squash court at the YMCA in Calgary, learning the elements of karate, one move at a time, very slowly.</p>
+<p>Later, teaching Python classes and enjoying the <a href="https://adventofcode.com/">Advent of Code</a> challenges every December, I made some ‘mindful practice’ exercises for my students, mostly geoscientists and engineers. I called them <strong>kata</strong>.</p>
+<div style="text-align: center">
+<a href="https://kata.scienxlab.org/"><strong>形 Check out the kata.</strong></a>
+</div>
+<section id="lots-to-choose-from" class="level2">
+<h2 class="anchored" data-anchor-id="lots-to-choose-from">Lots to choose from</h2>
+<p>Today there are 13 challenges, some of them more ‘geo’ than others. Here are some of them:</p>
+<ul>
+<li><code>sequence</code> — Analyse a sequence of rocks to find patterns. Good first problem.</li>
+<li><code>wireline</code> — Automatically detect bed boundaries in a density log.</li>
+<li><code>sample-names</code> — Ah, the realities of data-loading!</li>
+<li><code>prospecting</code> — Combine information from several map layers.</li>
+<li><code>photomicrograph</code> — An introduction to image processing and analysis.</li>
+<li><code>regression</code> — A single-variable machine learning regression problem.</li>
+</ul>
+<p>One slightly funky aspect of the challenges is that you have to interact with a web API to play, making HTTP GET requests to read your data and submit your answers. The server will tell you if you got the question right or not.</p>
+<p>💡 <strong>If you want to try one, <a href="https://colab.research.google.com/drive/1eP68NTV-GA3R-BYUh-CUxcgYDQ5IuetS">this Google Colab notebook</a> will help you get started. Or read on for some tips…</strong></p>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<p>To get started, you don’t need an account or anything, the server doesn’t know who you are. Just think up a random-ish key and use that to identify yourself (so the server can match your answer to the data you received).</p>
+<p>As a quick example, here’s how you can get the data for the first challenge, called <code>sequence</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>uri <span class="op">=</span> <span class="st">'https://kata.scienxlab.org/challenge/sequence'</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> {</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'key'</span>: <span class="st">'honey badger'</span>  <span class="co"># Choose a unique-ish key.</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> requests.get(url, params)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(r.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now <code>r.text</code> holds a long text string with your input data.</p>
+<p>To send an answer, update the <code>params</code> dictionary with the question number and your answer:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>params.update({<span class="st">'question'</span>: <span class="dv">1</span>, <span class="st">'answer'</span>: <span class="dv">42</span>})</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> requests.get(url, params)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(r.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The server will tell you how you did. In this case: <code>Incorrect. Your answer is too low.</code></p>
+<p>If you get stuck on a question, you can ask the server for a clue by sending a question number but no answer:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'key'</span>: <span class="st">'honey badger'</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'question'</span>: <span class="dv">1</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> requests.get(url, params)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(r.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>If you decide to give it a go, then good luck and have fun! And if you fancy trying to <em>write</em> a challenge — a challenge in itself! — then check out the <a href="https://github.com/scienxlab/kata-dev"><code>kata-dev</code> repo</a>.</strong></p>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1708905600000" data-listing-file-modified-sort="1708894257013" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="439">
-<div class="thumbnail">
-<p><a href="./blog/practice-form.html" class="no-external"></a></p><a href="./blog/practice-form.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/practice-form.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/practice-form.html" class="no-external">Practice your form</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/practice-form.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/practice-form.html" class="no-external">Coding challenges for scientists and engineers</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/practice-form.html" class="no-external">
-<div class="listing-date">
-Feb 26, 2024
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1707177600000" data-listing-file-modified-sort="1708894257009" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="819">
-<div class="thumbnail">
-<p><a href="./blog/no-more-ai-cliches/index.html" class="no-external"></a></p><a href="./blog/no-more-ai-cliches/index.html" class="no-external">
-<p class="card-img-top"><img src="blog/no-more-ai-cliches/google-image-search-ai.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./blog/no-more-ai-cliches/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/no-more-ai-cliches/index.html" class="no-external">No more AI clichés</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/no-more-ai-cliches/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/no-more-ai-cliches/index.html" class="no-external">Stop using these tired AI tropes</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/no-more-ai-cliches/index.html" class="no-external">
-<div class="listing-date">
-Feb 6, 2024
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1705449600000" data-listing-file-modified-sort="1708894257005" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="782">
-<div class="thumbnail">
-<p><a href="./blog/deepwind-hackathon-projects/index.html" class="no-external"></a></p><a href="./blog/deepwind-hackathon-projects/index.html" class="no-external">
-<p class="card-img-top"><img src="blog/deepwind-hackathon-projects/deepwind-hackathon.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./blog/deepwind-hackathon-projects/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/deepwind-hackathon-projects/index.html" class="no-external">DeepWind hackathon project round-up</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/deepwind-hackathon-projects/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/deepwind-hackathon-projects/index.html" class="no-external">What went down at the DeepWind hackathon in Trondheim</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/deepwind-hackathon-projects/index.html" class="no-external">
-<div class="listing-date">
-Jan 17, 2024
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1701648000000" data-listing-file-modified-sort="1708894257005" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1121">
-<div class="thumbnail">
-<p><a href="./blog/force-hackathon-projects.html" class="no-external"></a></p><a href="./blog/force-hackathon-projects.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/force-hackathon-projects.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/force-hackathon-projects.html" class="no-external">FORCE hackathon project round-up</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/force-hackathon-projects.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/force-hackathon-projects.html" class="no-external">All the projects at the FORCE LLM hackathon in Stavanger</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/force-hackathon-projects.html" class="no-external">
-<div class="listing-date">
-Dec 4, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1701475200000" data-listing-file-modified-sort="1708894257013" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="426">
-<div class="thumbnail">
-<p><a href="./blog/the-chatbots-are-coming/index.html" class="no-external"></a></p><a href="./blog/the-chatbots-are-coming/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/the-chatbots-are-coming/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/the-chatbots-are-coming/index.html" class="no-external">The chatbots are coming</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/the-chatbots-are-coming/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/the-chatbots-are-coming/index.html" class="no-external">What happened at the FORCE LLM hackathon in Stavanger</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/the-chatbots-are-coming/index.html" class="no-external">
-<div class="listing-date">
-Dec 2, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1701043200000" data-listing-file-modified-sort="1708894256997" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="223">
-<div class="thumbnail">
-<p><a href="./blog/a-wind-powered-hackathon.html" class="no-external"></a></p><a href="./blog/a-wind-powered-hackathon.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/a-wind-powered-hackathon.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/a-wind-powered-hackathon.html" class="no-external">A wind-powered hackathon</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/a-wind-powered-hackathon.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/a-wind-powered-hackathon.html" class="no-external">A new event devoted to offshore wind energy</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/a-wind-powered-hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 27, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1699228800000" data-listing-file-modified-sort="1708894257005" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="321">
-<div class="thumbnail">
-<p><a href="./blog/im-not-stupid-im-just.html" class="no-external"></a></p><a href="./blog/im-not-stupid-im-just.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/im-not-stupid-im-just.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/im-not-stupid-im-just.html" class="no-external">I’m not stupid I’m just…</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/im-not-stupid-im-just.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/im-not-stupid-im-just.html" class="no-external">…curious, …in a hurry, …not that interested</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/im-not-stupid-im-just.html" class="no-external">
-<div class="listing-date">
-Nov 6, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1698710400000" data-listing-file-modified-sort="1708894257013" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="257">
-<div class="thumbnail">
-<p><a href="./blog/software-underground-is-moving.html" class="no-external"></a></p><a href="./blog/software-underground-is-moving.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/software-underground-is-moving.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/software-underground-is-moving.html" class="no-external">Software Underground is moving</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/software-underground-is-moving.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/software-underground-is-moving.html" class="no-external">The social network for digital geoscientists is moving house</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/software-underground-is-moving.html" class="no-external">
-<div class="listing-date">
-Oct 31, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1698278400000" data-listing-file-modified-sort="1708894257005" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="351">
-<div class="thumbnail">
-<p><a href="./blog/hackathon-season.html" class="no-external"></a></p><a href="./blog/hackathon-season.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/hackathon-season.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/hackathon-season.html" class="no-external">Hackathon season</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/hackathon-season.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/hackathon-season.html" class="no-external">Social coding is still the best coding</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/hackathon-season.html" class="no-external">
-<div class="listing-date">
-Oct 26, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1697414400000" data-listing-file-modified-sort="1708894257013" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="273">
-<div class="thumbnail">
-<p><a href="./blog/welcome-to-scienxlab.html" class="no-external"></a></p><a href="./blog/welcome-to-scienxlab.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/welcome-to-scienxlab.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/welcome-to-scienxlab.html" class="no-external">Welcome to scienxlab</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/welcome-to-scienxlab.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/welcome-to-scienxlab.html" class="no-external">The blog is back!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/welcome-to-scienxlab.html" class="no-external">
-<div class="listing-date">
-Oct 16, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
