@@ -7,10 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Matt Hall">
-<meta name="dcterms.date" content="2023-10-31">
-<meta name="description" content="The social network for digital geoscientists is moving house">
+<meta name="dcterms.date" content="2026-04-18">
 
-<title>Software Underground is moving – scienxlab</title>
+<title>The SEG-Y seismic data format – scienxlab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -74,25 +73,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>
-
-      .quarto-title-block .quarto-title-banner {
-        background-image: url(../images/banner.png);
-background-size: cover;
-      }
-</style>
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Software Underground is moving – scienxlab">
-<meta property="og:description" content="The social network for digital geoscientists is moving house">
+<meta property="og:title" content="The SEG-Y seismic data format – scienxlab">
+<meta property="og:description" content="An open access scientific computing laboratory.">
 <meta property="og:site_name" content="scienxlab">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -140,62 +132,154 @@ background-size: cover;
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Software Underground is moving</h1>
-                  <div>
-        <div class="description">
-          The social network for digital geoscientists is moving house
-        </div>
-      </div>
-                </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Matt Hall </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">October 31, 2023</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The SEG-Y seismic data format</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Matt Hall </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 18, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
-<p><a href="https://softwareunderground.org/">The Software Underground</a> — a free chat group, a community, a movement —&nbsp;is moving to the Mattermost platform. As of right now, it lives at <a href="https://mattermost.softwareunderground.org/"><strong>mattermost.softwareunderground.org</strong></a>.</p>
-<p>After a little over 8 years on Slack, we have taken the decision to move to the open-source <a href="https://mattermost.com/">Mattermost software</a> (note, that link is only for the software, not for our instance of it). We are hosting it ourselves in <a href="https://www.hetzner.com/">Hetzner’s cloud</a> (based in Finland), which means we own our own data… and maybe have a little more control over our destiny.</p>
-<p>Apart from being open source, there are some other cool features of Mattermost, compared to Slack:</p>
+</header>
+
+
+<section id="the-seg-y-seismic-data-format" class="level1">
+<h1>The SEG-Y seismic data format</h1>
+<p>SEG‑Y (with a hyphen, as in the standard documentation), also known as SEGY and SEG Y, pronounced “segg why,” is a seismic data file format. The name stands for the Society of Exploration Geophysicists’ “Y” format. The format was intended for data exchange — and was related to the defunct SEG‑X (“exchange”) format — but it has become the de facto standard for processed reflection seismic records. Other standards, such as SEG‑D for field records and SEG‑P for positional data, deal with other data types.</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>SEG‑Y means seismic data. For many of us, it’s the only type of seismic file we have much to do with — we might handle others, but for the most part they are closed, proprietary formats that “just work” in the application they belong to (Landmark’s brick files, say, or OpendTect’s CBVS files). Processors care about other kinds of data — the SEG has defined formats for field data (SEG‑D) and positional data (SEG‑P), for example. But SEG‑Y is the seismic file for everyone. Kind of.</p>
+<blockquote class="blockquote">
+<p>The first rule of the SEG‑Y format is that no‑one follows the SEG‑Y format.</p>
+</blockquote>
+<p>The open SEG‑Y “standard” (those air quotes are an important feature of the standard 😄) was defined by SEG in 1975. The first revision, Rev 1, was published in 2002. The second revision, Rev 2, was announced by the SEG Technical Standards Committee at the SEG Annual Meeting in 2013 and (at that time) was expected to see adoption in 2014.</p>
+</section>
+<section id="revision-0" class="level2">
+<h2 class="anchored" data-anchor-id="revision-0">Revision 0</h2>
+<p>The original SEG‑Y data exchange format was introduced in 1975. See “Report on recommended standards for digital tape formats” (Barry, Cavers, and Kneale, 1975) — <a href="https://web.archive.org/web/20211017060649/http://seg.org/Portals/0/SEG/News%20and%20Resources/Technical%20Standards/seg_y_rev0.pdf">SEG‑Y Rev 0 PDF (archived)</a>.</p>
+</section>
+<section id="revision-1" class="level2">
+<h2 class="anchored" data-anchor-id="revision-1">Revision 1</h2>
+<p>New high‑density media and the widespread adoption of 3D seismic data necessitated an update to the format. Rev 1 was adopted in 2002 and introduced the following improvements over the original specification (<a href="https://web.archive.org/web/20211017060649/http://www.seg.org/documents/10161/77915/seg_y_rev1.pdf">SEG‑Y Rev 1 PDF (archived)</a>):</p>
 <ul>
-<li>Full support for Markdown, plus LaTeX equations.</li>
-<li>Syntax highlighted code blocks.</li>
-<li>The concept of <em>Teams</em>, allowing us to host subcommunities.</li>
+<li>Files may be written to any medium that is resolvable to a stream of variable‑length records.</li>
+<li>Data word formats now include 4‑byte IEEE float and 1‑byte integer words.</li>
+<li>A small number of additional fields in the 400‑byte binary file header and the 240‑byte trace header were defined.</li>
+<li>Some other fields in those headers were clarified.</li>
+<li>An extended text file header, consisting of additional 3200‑byte blocks, was introduced.</li>
+<li>The data in the extended header uses a stanza layout; standard stanzas were defined.</li>
+<li>Trace identification was expanded.</li>
+<li>Engineering conversions were introduced.</li>
+<li>The text file header can be ASCII encoded, not only EBCDIC.</li>
 </ul>
-<p>Oh yeah, and it will cost us about a third of what we were previously spending on Slack 💸&nbsp;that is, until they doubled our payments in September when apparently they changed how they count ‘active members’. Even with the 85% non-profit discount, Slack was simply too expensive. And some people were not comfortable with <a href="https://www.bbc.com/news/business-55154326">its ownership</a> and general direction. For example, it recently introduced a 90-day message lifetime for teams on the free tier, all but obviating its use for smaller communities (who already had a 10,000 message limit).</p>
-<p>If you’ve been looking for somewhere to hang out and chat —&nbsp;or even just to lurk and learn —&nbsp;about the digital subsurface, then Software Underground might be for you. It’s full of coders, people learning to code, earth scientists, and people learning to earth science. <a href="https://mattermost.softwareunderground.org/"><strong>Check it out.</strong></a></p>
+<p>See a schematic of the byte stream structure: <a href="https://web.archive.org/web/20211017060649/https://subsurfwiki.org/wiki/File:SEGY_file_byte_stream_structure.svg">SEG‑Y file byte stream structure (archived)</a>.</p>
+<p>Selected Rev 1 trace header fields (start byte, length, description, note):</p>
+<ul>
+<li>1, 4 bytes: Trace sequence number within line — strongly recommended</li>
+<li>9, 4 bytes: Original field record number — strongly recommended</li>
+<li>13, 4 bytes: Trace number in original field record — strongly recommended</li>
+<li>29, 2 bytes: Trace identification code — strongly recommended</li>
+<li>115, 2 bytes: Samples in trace — strongly recommended</li>
+<li>117, 2 bytes: Sample interval (ms) — strongly recommended</li>
+<li>181, 4 bytes: X coordinate of ensemble position of this trace — recommended</li>
+<li>185, 4 bytes: Y coordinate of ensemble position of this trace — recommended</li>
+<li>189, 4 bytes: 3D inline number — recommended for 3D</li>
+<li>193, 4 bytes: 3D crossline number (often equals ensemble number in bytes 21–24) — recommended for 3D</li>
+<li>197, 4 bytes: Shotpoint number (probably 2D only) — recommended for 2D</li>
+</ul>
+<p>More details: <a href="https://web.archive.org/web/20211017060649/https://subsurfwiki.org/wiki/SEG-Y/Full_header_table">Full SEG‑Y header table (archived)</a>.</p>
+</section>
+<section id="revision-2" class="level2">
+<h2 class="anchored" data-anchor-id="revision-2">Revision 2</h2>
+<p>Rev 2 was approved in March 2017 (<a href="https://web.archive.org/web/20211017060649/https://seg.org/Portals/0/SEG/News%20and%20Resources/Technical%20Standards/seg_y_rev2_0-mar2017.pdf">SEG‑Y Rev 2 specification PDF (archived)</a>). Byte stream schematic: <a href="https://web.archive.org/web/20211017060649/https://subsurfwiki.org/wiki/File:SEGY_rev_2_stream.png">SEG‑Y Rev 2 stream diagram (archived)</a>.</p>
+<p>Key features:</p>
+<ul>
+<li>Allow up to 65,535 additional 240‑byte trace headers; bytes 233–240 reserved for trace header name.</li>
+<li>Stanzas can appear after the trace data in a “data trailer.”</li>
+<li>Support up to 2^32 − 1 samples per trace (nearly 4.3 billion).</li>
+<li>Support up to 2^64 − 1 traces per line or ensemble (about 1.8 × 10^19).</li>
+<li>Permit arbitrarily large and small sample intervals.</li>
+<li>Support 3‑byte and IEEE 8‑byte (64‑bit) sample formats.</li>
+<li>Support little‑endian and pairwise byte swapping.</li>
+<li>Support microsecond date and time stamps.</li>
+<li>Provide additional precision in coordinates, depths, elevations.</li>
+<li>Synchronize coordinate reference system specification with SEG‑D Rev 3.</li>
+<li>Include depth, velocity, EM, gravity, and rotational sensor data.</li>
+<li>Backward compatible with Rev 1, as long as undefined fields were filled with binary zeros.</li>
+</ul>
+<p>Here are three blog posts I wrote about Rev 2:</p>
+<ul>
+<li><a href="https://agilescientific.com/blog/2014/3/26/what-is-seg-y.html">What is SEG-Y?</a></li>
+<li><a href="https://agilescientific.com/blog/2017/3/29/more-precise-segy">More precise SEG-Y?</a></li>
+<li><a href="https://agilescientific.com/blog/2017/3/31/little-endian-is-legal">SEG-Y Rev 2 again: little endian is legal!</a></li>
+</ul>
+</section>
+<section id="segy-file-handling-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="segy-file-handling-libraries">SEG‑Y file handling libraries</h2>
+<p>Most proprietary seismic interpretation software can read SEG‑Y data. The only open‑source interpretation application noted here is <a href="https://web.archive.org/web/20211017060649/https://subsurfwiki.org/wiki/OpendTect">OpendTect (archived)</a>.</p>
+<p>Python libraries for reading SEG‑Y files include:</p>
+<ul>
+<li><a href="https://web.archive.org/web/20211017060649/https://github.com/equinor/segyio">segyio (archived)</a> — by Jørgen Kvalsvik and others at Equinor</li>
+<li><a href="https://web.archive.org/web/20211017060649/https://github.com/sixty-north/segpy">SegPY (archived)</a> — by Rob Smallshire and others</li>
+<li><a href="https://web.archive.org/web/20211017060649/http://github.com/obspy/obspy/wiki">ObsPy (archived)</a> — by Moritz Beyreuther and others</li>
+</ul>
+<p>If you just want SEG‑Y data in another format (e.g., an image), a utility like <a href="https://web.archive.org/web/20211017060649/http://pubs.usgs.gov/of/2005/1311/">segy2ascii (archived)</a> can work well.</p>
+<p>See also: <a href="https://web.archive.org/web/20211017060649/https://subsurfwiki.org/wiki/List_of_seismic_software_libraries">List of seismic software libraries (archived)</a>.</p>
+</section>
+<section id="see-also" class="level2">
+<h2 class="anchored" data-anchor-id="see-also">See also</h2>
+<ul>
+<li>SEG‑D for field data</li>
+<li>SEG‑P for positional information</li>
+<li>SEG‑2, another format (often seen with GPR data)</li>
+</ul>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ol type="1">
+<li><p>Barry, K.; Cavers, D.; Kneale, C. (1975). Report on recommended standards for digital tape formats. Geophysics 40(2), 344–352. <a href="https://web.archive.org/web/20211017060649/http://seg.org/Portals/0/SEG/News%20and%20Resources/Technical%20Standards/seg_y_rev0.pdf">SEG‑Y Rev 0 PDF (archived)</a></p></li>
+<li><p>SEG Technical Standards Committee (2002). SEG‑Y Rev 1 specification. <a href="https://web.archive.org/web/20211017060649/http://www.seg.org/documents/10161/77915/seg_y_rev1.pdf">SEG‑Y Rev 1 PDF (archived)</a></p></li>
+<li><p>Assertion by “Matt” (2013‑01‑03, UTC) regarding recommended fields.</p></li>
+<li><p>SEG Technical Standards Committee (2017). SEG‑Y Rev 2.0 specification (approved March 2017). <a href="https://web.archive.org/web/20211017060649/https://seg.org/Portals/0/SEG/News%20and%20Resources/Technical%20Standards/seg_y_rev2_0-mar2017.pdf">SEG‑Y Rev 2 PDF (archived)</a></p></li>
+</ol>
+</section>
+<section id="external-links" class="level2">
+<h2 class="anchored" data-anchor-id="external-links">External links</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/SEG-Y">SEG‑Y — Wikipedia</a></li>
+<li><a href="https://library.seg.org/seg-technical-standards">SEG Technical Standards</a></li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

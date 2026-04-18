@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Matt Hall">
+<meta name="dcterms.date" content="2026-04-18">
+
+<title>Unsolved problems in applied geophysics – scienxlab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/scienxlab.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-be856d1c910a21ad21994ca8b3734906.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Unsolved problems in applied geophysics – scienxlab">
+<meta property="og:description" content="An open access scientific computing laboratory.">
+<meta property="og:site_name" content="scienxlab">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/scienxlab.png" alt="" class="navbar-logo light-content">
+    <img src="../images/scienxlab.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">scienxlab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages.html"> 
+<span class="menu-text">Pages</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../blog.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/scienxlab"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Unsolved problems in applied geophysics</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Matt Hall </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 18, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The most famous list of unsolved problems came from the mathematician <a href="https://en.wikipedia.org/wiki/David_Hilbert">David Hilbert</a> in 1902. Adapting his language slightly:</p>
+<blockquote class="blockquote">
+<p>Who of us would not be glad to lift the veil behind which the future lies hidden; to cast a glance at the next advances of our science and at the secrets of its development during future centuries? What particular goals will there be toward which the leading [geoscientific] spirits of coming generations will strive? What new methods and new facts in the wide and rich field of [geoscientific] thought will the new centuries disclose?</p>
+<p>— Adapted from David Hilbert (1902). Mathematical Problems, Bulletin of the American Mathematical Society 8 (10), p 437–479. Originally appeared in Göttinger Nachrichten, 1900, pp.&nbsp;253–297. <a href="http://www.ams.org/journals/bull/1902-08-10/S0002-9904-1902-00923-3/S0002-9904-1902-00923-3.pdf">Available online</a>.</p>
+</blockquote>
+<p>There have been other, similar efforts in various fields:</p>
+<ul>
+<li><a href="http://www.claymath.org/millennium/">The Millenium Prize</a> — in mathematics, from the Clay Institute</li>
+<li><a href="http://www.sciencemag.org/site/feature/misc/webfeat/125th/">Science Magazine</a></li>
+<li><a href="http://www.societechimiquedefrance.fr/fr/10-problems-for-chemistry-in-the-21th-century.html">Chemistry</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_unsolved_problems">List of unsolved problems</a> — in all sorts of fields, collected on Wikipedia</li>
+</ul>
+<section id="papers" class="level2">
+<h2 class="anchored" data-anchor-id="papers">Papers</h2>
+<p>There have been a few papers on this topic, mostly on the broader questions of geophysics. Some examples:</p>
+<ul>
+<li><a href="http://adsabs.harvard.edu/abs/1947TrAGU..28..673A">Some unsolved problems of geophysics</a> — Leason Adams, 1947.</li>
+<li><a href="http://www.agu.org/books/gm/v060/">Quo Vadimus: Geophysics for the Next Generation</a> — G. D. Garland and J. R. Apel, 1990.</li>
+<li>Unfolding the Labyrinth: Open Problems in Physics, Mathematics, Astrophysics and Other Areas of Science — Florentin Smarandache, et al.</li>
+</ul>
+<p>There are some in geology too: - <a href="http://www.forgottenbooks.org/books/On_Some_Unsolved_Problems_in_Geology_1000147108">On some unsolved problems in geology</a> — by John Dawson, 1883 - <a href="http://www.earthmagazine.org/article/five-outstanding-questions-earth-science">Five outstanding questions in earth science</a> — Earth Magazine, 2012</p>
+<p>And in applied geophysics and reflection seismology: - <a href="http://tle.geoscienceworld.org/content/24/Supplement/S32.full">Addressing Milo’s challenges with 25 years of seismic advances</a> — Larry Lines, 2005.</p>
+</section>
+<section id="backuss-challenges-in-1980" class="level2">
+<h2 class="anchored" data-anchor-id="backuss-challenges-in-1980">Backus’s challenges in 1980</h2>
+<p>These were published in 1980, when Milo Backus was president of SEG. I don’t have the original paper (anyone?), but the problems themselves are quoted in Lines, 2005:</p>
+<ol type="1">
+<li>Our current seismic image of the subsurface is most imperfect.</li>
+<li>Our ability to deal with the effects of lateral heterogeneity on seismic transmission is very crude.</li>
+<li>3D seismic imaging is still in its infancy.</li>
+<li>“Direct” hydrocarbon detection is still generally limited to only the most blatant fluid content anomalies.</li>
+<li>Our quantitative estimates of subsurface elastic properties are still very crude and incomplete.</li>
+<li>We have not yet nailed down the nature and magnitude of high-frequency loss—the only fundamental limitation of the seismic method.</li>
+<li>We are just beginning to recognize that the earth is a solid—the next generation can recognize its anisotropy.</li>
+<li>We still tend to view the subsurface impedance as white and Gaussian.</li>
+<li>We have not established the degree of ambiguity inherent in our inverse problem.</li>
+<li>We have made only a small beginning in our use of the huge information content available in exploration geophysics results to illuminate geologic processes and geologic history.</li>
+</ol>
+</section>
+<section id="unsolved-problems-unsession-2013" class="level2">
+<h2 class="anchored" data-anchor-id="unsolved-problems-unsession-2013">Unsolved problems unsession 2013</h2>
+<p>In May 2013 we held a live brainstorm session at Canada GeoConvention in May. Topics were lightly oriented around ‘integration’. The top problems we named and ranked in the session were, with rankings:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>votes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Less secrecy, more sharing / Free the data</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>Improving seismic resolution</td>
+<td>17</td>
+</tr>
+<tr class="odd">
+<td>Acceptance of error — live with it</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td>How to get more oil &amp; gas from old fields</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>Water — need to develop national and global understanding &amp; policy</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>How to resolve damage from resource extraction vs environmental protection</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>Lack of science (E&amp;P) acceptance in society</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>Gas hydrates development R&amp;D (×4)</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="interviews-with-satinder-chopra" class="level2">
+<h2 class="anchored" data-anchor-id="interviews-with-satinder-chopra">Interviews with Satinder Chopra</h2>
+<p>Satinder Chopra has been interviewing people in CSEG’s Recorder magazine for over 12 years. Recently, he has been asking people about unsolved problems. These are (extensively) quoted and paraphrased; the originals are online. Apart from the reply by Wang, they are licensed CC-BY by the CSEG.</p>
+<section id="zijing-wang-oct-2004" class="level3">
+<h3 class="anchored" data-anchor-id="zijing-wang-oct-2004">Zijing Wang, Oct 2004</h3>
+<p>This wasn’t really an interview, per se, but part of a series on general problems in applied geophysics. This was the question in this particular issue:</p>
+<blockquote class="blockquote">
+<p>SC: Distinguishing “fizz water” and “commercial gas” saturations and locating “heavy oil sand units” with surface seismic and borehole data are two challenging problems for us today. How are we meeting these challenges?</p>
+</blockquote>
+<p>And Zee Wang (Chevron) replied:</p>
+<blockquote class="blockquote">
+<p>Theoretically, it’s nearly impossible to distinguish “fizz water sand units” from “commercial gas sand units”, or “heavy oil sand units” from “water sand units”, just using P-wave impedance or P-P reflectivity data. This is of course because “fizz water sand units” and “commercial gas sand units”, or “heavy oil sand units” and “water sand units”, have similar P-wave impedances (or the difference is so small that it is unresolvable seismically).</p>
+<p>This is a tough problem as the exploration geophysics industry relies heavily on P-P reflectivity data and P-wave impedances and contracts to identify stru c t u res, stratigraphy, and potential fluids. As such, this problem is currently unsolved.</p>
+</blockquote>
+<p>He went on to list some of the lines of research being pursued at the time.</p>
+</section>
+<section id="larry-matthews-feb-2013" class="level3">
+<h3 class="anchored" data-anchor-id="larry-matthews-feb-2013">Larry Matthews, Feb 2013</h3>
+<p><a href="http://csegrecorder.com/interviews/view/interview-with-larry-matthews">Interview with Larry Matthews</a></p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>If you are a seismologist working in Italy I would suggest the most important question is, “How can I predict destructive earthquakes so they don’t send me to jail?”</li>
+<li>Microseismic is an emerging technology in the oil and gas business that is being used extensively for the monitoring of hydraulic fracturing. There are no ends of questions to be answered here. What is the in-situ stress state of the earth, how are we modifying those stresses with our hydraulic fracture and how will that manifest in the microseisms that we detect and the production we ultimately realize? How are we going to figure out where proppant is going and what is the effective stimulated rock volume? What is the true value of microseismic information? The questions are growing faster than the answers right at this present time. So for younger geoscientists entering the business there is no end in sight to the topic areas of microseismic and geomechanics that I can see.</li>
+<li>The third revolves around the proliferation of technical information. [There is so much.] It seems to me there is an ongoing need to try to figure out how we can better synthesize all of this information. It’s overwhelming for most and so the tendency is – I can’t go there, because even if the answer I seek is available, I’ll be forever trying to figure out how to get it quickly and easily. So Library Sciences, IT and how we can continue to deliver pertinent, effective and meaningful information to the people that need it in a timely fashion is going to be a big and ongoing challenge.</li>
+</ol>
+</blockquote>
+</section>
+<section id="gerard-schuster-april-2013" class="level3">
+<h3 class="anchored" data-anchor-id="gerard-schuster-april-2013">Gerard Schuster, April 2013</h3>
+<p><a href="http://members.cseg.ca/scriptcontent/recorder/04apr.cfm">Interview</a> and <a href="http://csegrecorder.com/editions/issue/2013-04">Interview</a></p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Extracting permeability from seismic data. Reliably determining saturation, porosity, crack density+orientation from seismic data are still challenges.</li>
+<li>Reliable subsalt velocity and images.</li>
+<li>Optimal and useful ways to combine different types of data such as seismic, gravity, and EM.</li>
+</ol>
+<p>I find imaging of multiples very interesting, which I think will eventually be used as a useful complement to imaging primaries, not just an after- thought. Designing experiments that utilize both multiples and primaries will likely give you more bang for the buck, in some cases. Dongliang Zhang at KAUST and Yike Liu in China (and others) are doing some very interesting work in the area.</p>
+</blockquote>
+</section>
+<section id="larry-mayo-june-2013" class="level3">
+<h3 class="anchored" data-anchor-id="larry-mayo-june-2013">Larry Mayo, June 2013</h3>
+<p><a href="http://csegrecorder.com/editions/issue/2013-06">Interview with Larry Mayo</a></p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>The simplest unsolved problem comes from data acquisition where surface conditions vary locally, either wiping out reflections or changing in depth through multiples or mode converted noise. Acquisition parameters are set to best get the average solution. Acquiring more data with more geophones with the mega channel cableless systems helps to improve the signal to noise and is a start, but comes at a cost. Interpolation has helped this issue tremendously from my experience.</li>
+<li>Passive seismic monitoring systems are being advanced with 4D and microseismic but are costly and dependent upon seasonality. Newer systems and techniques (borehole fiber optics) are being developed but are taking time to advance other than on a well-by-well basis where they should be applied to the field to get better recovery.</li>
+<li>It is hard to choose between two others! I have not found the ideal seismic interpretative workstation while on the other hand I believe that non-seismic methods have a future as another tool in the toolbox.</li>
+</ol>
+</blockquote>
+</section>
+<section id="dave-mosher-november-2013" class="level3">
+<h3 class="anchored" data-anchor-id="dave-mosher-november-2013">Dave Mosher, November 2013</h3>
+<p><a href="http://csegrecorder.com/interviews/view/interview-with-david-mosher">Interview with Dave Mosher</a></p>
+<blockquote class="blockquote">
+<p>I cannot speak to the entire discipline of geophysics, but in the seismic world, I’d say the three most important problems are resolution, resolution, and resolution. We are forever seeking better resolution (horizontal and vertical) from our seismic data so we can better image the seafloor and its subsurface and draw the remotely sensed data closer to reality. There are clearly limitations in physics that we approach but tremendous gains have been made in acquisition and processing technologies in the last decade that take us close to these physical limitations.</p>
+</blockquote>
+</section>
+<section id="john-logel-feb-2014" class="level3">
+<h3 class="anchored" data-anchor-id="john-logel-feb-2014">John Logel, Feb 2014</h3>
+<p><a href="http://csegrecorder.com/interviews/view/interview-with-john-logel">Interview with John Logel</a></p>
+<blockquote class="blockquote">
+<p>I guess I still have to point out our greatest panacea, resolution. We have made great leaps with new acquisition methods, and pre- and post-stack algorithms but we are still working at macro- scales. I’ll follow that by perfect velocity determination. If we can understand and measure this field, we go a long way to much better images. Finally these items coming with a fast and less intense footprint, I guess I mean remotely.</p>
+</blockquote>
+</section>
+<section id="sven-trietel-may-2014" class="level3">
+<h3 class="anchored" data-anchor-id="sven-trietel-may-2014">Sven Trietel, May 2014</h3>
+<p><a href="http://csegrecorder.com/interviews/view/interview-with-sven-treitel-2014">Interview with Sven Treitel</a></p>
+<blockquote class="blockquote">
+<p>As I just mentioned, my crystal ball is a tarnished one, but here are three problems that strike me as important:</p>
+<ol type="1">
+<li>How do we weight different geophysical data sets when inverting for structure, lithology and fluid content? Is there an objective criterion to do this?</li>
+<li>Current processing methods make assumptions about random as well as organized noise. But what happens to our most advanced techniques if they are based on the wrong, or inappropriate physical model? For example, to what extent does the elastic wave equation fail to describe propagation in the inhomogeneous, fluid filled, aniso- tropic, fractured, etc., etc. real earth?</li>
+<li>Is there an objective way to decide whether observed seismic attenuation is primarily due to intrinsic absorption, i.e., to irreversible frictional losses, or to extrinsic absorption, such as the redistribution of multiply scattered energy in a layered medium?</li>
+</ol>
+<p>SC: Do you think the current levels of R &amp; D being carried out in our industry will be able to solve these problems? If not, then what needs to be done?</p>
+<p>Probably not – these issues are basic and surely require many years of dedicated effort. Long term R&amp;D in our industry is by and large dead. Progress might occur in academic environments, but here funding is the big problem. Were our industry ever to find its way to create a jointly funded long-range R&amp;D facility to attack these and other funda- mental problems, that would be wonderful. What comes to my mind here is the French Petroleum Institute (IFP). But I’m not optimistic that the vision is there to make this a reality.</p>
+</blockquote>
+</section>
+<section id="rob-simm-september-2014" class="level3">
+<h3 class="anchored" data-anchor-id="rob-simm-september-2014">Rob Simm, September 2014</h3>
+<p><a href="http://csegrecorder.com/interviews/view/interview-with-rob-simm">Interview with Rob Simm</a></p>
+<blockquote class="blockquote">
+<p>From the perspective of conventional reservoirs some outstanding issues are how to routinely exploit anisotropic information in seismic reservoir characterization and how to utilize spectral decomposition data in AVO Amplitude vs Offset. Two is my limit.</p>
+</blockquote>
+</section>
+<section id="eric-andersen-november-2014" class="level3">
+<h3 class="anchored" data-anchor-id="eric-andersen-november-2014">Eric Andersen, November 2014</h3>
+<p><a href="http://csegrecorder.com/interviews/view/interview-with-eric-andersen">Interview with Eric Andersen</a></p>
+<blockquote class="blockquote">
+<p>I find the greatest problem I face is scale. We are continuously investigating thinner and thinner reservoirs with subtle characteristics. We’re not in the Gulf of Mexico anymore. Reservoir Engineers are the first to point out the lack of vertical resolution in seismic data. That said, there [have] been great strides in recording technologies, processing algorithms, and statistical methods that [are] narrowing the gap.</p>
+<p>The second problem I see is similar to scale, but not in the vertical sense. When you mention geomechanics to an engineer, they think of borehole stability. Geomechanics is also involved in the far-field seismic experiment, in that it relates to velocity (compaction), anisotropy, and faults/fractures. Understanding lateral and horizontal stresses and their relation or expression in the near-field (i.e.&nbsp;borehole), is a great problem. Not only for exploiting unconventional reservoirs, but in multi-million-dollar international wells drilling down the flank of a fault.</p>
+<p>The third problem I see is more philosophical. When I went to school, much of what I learned could be explained in a pool hall. Angles of incidence, reflections, velocities, all happened in front of your eyes. It was easy to grasp and explain to your manager. Now we have progressed to the world of azimuthal anisotropy, VTIVertical transverse isotropy, HTIHorizontal transverse isotropy, broadband recording… the list goes on. We are becoming very specialized and understanding, let alone explaining, the concepts of geophysics is becoming more and more difficult. We are in danger of isolating ourselves further from the asset team, which deems everything we do a ‘science project’. Education and understanding has always been a problem in geophysics, and solving it doesn’t seem to be getting any easier.</p>
+</blockquote>
+</section>
+<section id="kris-innanen-february-2015" class="level3">
+<h3 class="anchored" data-anchor-id="kris-innanen-february-2015">Kris Innanen, February 2015</h3>
+<p><a href="http://csegrecorder.com/interviews/view/interview-with-kris-innanen">Interview with Kris</a></p>
+<blockquote class="blockquote">
+<p>A very important seismic exploration and monitoring problem is the full integration of rock physics and seismic inversion. Another good one is the missing wavelengths in inversion. I think the most important problem of all is the “missing physics” problem, where we try to quantify and manage the gap between the completeness of a convenient chosen physics model and one that adequately explains our data. The problem includes defining what “adequate” means. These are not easy questions. In my opinion we don’t even know how to pose many of them properly yet, let alone solve them.</p>
+</blockquote>
+</section>
+<section id="mirko-van-der-baan-june-2015" class="level3">
+<h3 class="anchored" data-anchor-id="mirko-van-der-baan-june-2015">Mirko van der Baan, June 2015</h3>
+<p><a href="http://csegrecorder.com/interviews/view/interview-with-mirko-van-der-baan">Interview with Mirko</a></p>
+<blockquote class="blockquote">
+<ul>
+<li>Finding a good work-life balance</li>
+<li>Finding an optimal balance between economic and sustainable development of our precious resources</li>
+<li>Understanding why and when felt induced seismicity may occur. Contrary to some high-profile publications, felt seismicity due to anthropogenic activities is rather an exception than a general rule given the scale of hydrocarbon exploitation in North America. It does occur though. It is important for all (operators, regulators, the public and academics) to understand better the underlying processes.</li>
+</ul>
+</blockquote>
+</section>
+<section id="dimitri-bevc-january-2016" class="level3">
+<h3 class="anchored" data-anchor-id="dimitri-bevc-january-2016">Dimitri Bevc, January 2016</h3>
+<p><a href="https://csegrecorder.com/interviews/view/interview-with-dimitri-bevc">Interview with Dimitri</a></p>
+<blockquote class="blockquote">
+<p>I remember watching a Star Trek movie once, and as they neared a new planet, the captain called a geophysicist up to the bridge. All the guy had to do was press a button on the com, and a full 3-D image of the planet emerged on the screen. We haven’t come up with that solution yet.</p>
+<p>But seriously, there could be a lot more automation in our processing and imaging, and we could harness modern technology more effectively for better interactive interpretation in terms of both data access and processing while interpreting. Concepts from Big Data could help in that, and in some of the “unsolved problems” where we perhaps don’t yet have an established physical link, or where it’s too expensive to implement the physics.</p>
+</blockquote>
+</section>
+<section id="amy-fox-january-2017" class="level3">
+<h3 class="anchored" data-anchor-id="amy-fox-january-2017">Amy Fox, January 2017</h3>
+<p><a href="https://csegrecorder.com/interviews/view/interview-with-amy-fox">Interview with Amy</a></p>
+<blockquote class="blockquote">
+<p>SC: Considering the challenges we are facing in characterizing the unconventional reservoirs, what kind of change do you think we need to bring into our approach or our workflows?</p>
+<p>I think the biggest change that needs to happen is getting out of the mindset that we can accurately model the subsurface cheaply and easily. That’s not to say we shouldn’t be looking for ways to economize – we always need to be doing that – but it’s sort of like that thing you see on people’s office door that says “good, cheap and fast – pick any two.” I’ve already mentioned a couple of areas that I think hold great promise, geostatistics and fracture mechanics. True integration of disciplines is also needed. We talk a lot about integration in our industry, but I rarely see it actually happen. We still work in silos. So in that respect I think organizational culture needs an overhaul.</p>
+</blockquote>
+</section>
+<section id="eric-von-lunen-march-2017" class="level3">
+<h3 class="anchored" data-anchor-id="eric-von-lunen-march-2017">Eric von Lunen, March 2017</h3>
+<p><a href="https://csegrecorder.com/interviews/view/interview-wth-eric-von-lunen">Interview with Eric</a></p>
+<blockquote class="blockquote">
+<p>SC: As you have championed the benefits of integrated shale resource characterization, I would like to ask you about how much value do you think multicomponent seismic data can bring to such an exercise?</p>
+<p>There are two world arenas that consider multi-component reflection seismic data (MCRS) somewhat routinely: onshore China and Canada. MCRS has been a topic of research interest in many very qualified university consortia, but has had two stumbling blocks, namely acquisition and processing. In recent years, Arcis, CGG and other companies have developed consistent acquisition QC and analysis standards. The MCRS of horizontally layered media does not cause data processing firms to throw up their hands in painful anguish anymore as well.</p>
+<p>Anisotropic media analysis (shale reservoir characterization) provides a useful area where the technology can deliver valuable results not achieved by traditional wide azimuth 3D methods. There are two critical pieces of information necessary for the exploitation of low porosity perm reservoirs (or “shale”): detailed mapping on seismic scale of rock properties in terms of mechanical parameters such as <a href="https://en.wikipedia.org/wiki/Young%27s_modulus">Young’s modulus</a>, <a href="https://en.wikipedia.org/wiki/Poisson%27s_ratio">Poisson’s Ratio</a>, etc.; and the subsurface geostress model. Trying to extract useful data from 3D acoustic data requires the interpreter to make large-scale assumptions in effective homogeneity and isotropic media. But these assumptions can be dropped or loosened if we use multi-component reflection seismic and AVA techniques of mode converted waveforms analysis. I would say we are 80% of the way through this technology evolution, but there are still some problems to be addressed in amplitude restoration and wavelet dependency of simultaneous PS propagation. The work we did in the last 7 years clearly indicates we are capable of analyzing fractured reservoir media in a lateral varying stress environment.</p>
+<p>SC: What are the directions in which some of the R and D worldwide is focused in our industry? What is your impression about (a) the important developments that people can expect in geophysics in the near future (b) anything path breaking that we can expect that would revolutionize things, after the 3D seismic adoption in the 1980s and becoming a routine in early 1990s?</p>
+<p>I find the usefulness of full-waveform elastic media models to be very encouraging and likely to rapidly influence our interpretation concepts and workflows. Hopefully these concepts can be combined with pattern recognition techniques to support quantitative reservoir characterization.</p>
+</blockquote>
+</section>
+</section>
+<section id="daniel-garcia-castellanos" class="level2">
+<h2 class="anchored" data-anchor-id="daniel-garcia-castellanos">Daniel Garcia-Castellanos</h2>
+<p>Daniel Garcia-Castellanos (<a href="http://www.twitter.com/danigeos"><span class="citation" data-cites="danigeos">@danigeos</span> on Twitter</a>) at ICTJA-CSIC Barcelona has been writing about unsolved problems in geoscience for several years. He has collected a great list on his blog: “49 open challenges in earth science”.</p>
+</section>
+<section id="unsolved-problems-on-the-web" class="level2">
+<h2 class="anchored" data-anchor-id="unsolved-problems-on-the-web">Unsolved problems on the web</h2>
+<p><a href="https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_geoscience">List of unsolved problems in geoscience</a> — Article on Wikipedia</p>
+<section id="blog-posts" class="level3">
+<h3 class="anchored" data-anchor-id="blog-posts">Blog posts</h3>
+<ul>
+<li><a href="http://www.agilegeoscience.com/journal/2010/12/29/unsolved-problems.html">Unsolved problems</a></li>
+<li><a href="http://retosterricolas.blogspot.ca/2012/03/ideas-for-open-scientific-questions-on.html">Ideas for open scientific questions</a></li>
+<li><a href="http://retosterricolas.blogspot.ca/2011/10/cuestiones-abiertas-de-la-geociencia.html">Cuestiones abertos de la geociencia</a></li>
+</ul>
+</section>
+<section id="google-moderator" class="level3">
+<h3 class="anchored" data-anchor-id="google-moderator">Google Moderator</h3>
+<p>Google Moderator is a tool for gathering and ranking questions in real time. I tried it out in 2010: <a href="http://www.google.com/moderator/#15/e=2a236&amp;t=2a236.40">Google Moderator</a>. The top questions are shown to the right, but note that only 15 people participated. It would be fun to reproduce this exercise in a large room full of people.</p>
+</section>
+</section>
+<section id="other-disciplines" class="level2">
+<h2 class="anchored" data-anchor-id="other-disciplines">Other disciplines</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Lists_of_unsolved_problems">Lists of unsolved problems</a> — Wikipedia meta-list</li>
+<li><a href="http://mathworld.wolfram.com/UnsolvedProblems.html">Unsolved problems in mathematics</a> — Wolfram MathWorld</li>
+<li>…there are loads of others…</li>
+</ul>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ul>
+<li>Florentin Smarandache; V. Christianto; Fu Yuhua; R. Khrapko; J. Hutchison (2006). Unfolding the Labyrinth: Open Problems in Physics, Mathematics, Astrophysics and Other Areas of Science. Chapter 4. <a href="http://arxiv.org/abs/math/0609238v2">arXiv:math/0609238v2</a>.</li>
+<li>CSEG Recorder (Oct 2004). <a href="http://csegrecorder.com/features/view/expert-answers-200410">Expert answers</a>.</li>
+<li>Daniel Garcia-Castellanos. <a href="http://retosterricolas.blogspot.com/p/open-questions-in-geoscience.html">Open questions in geoscience</a> — website.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/scienxlab\.org\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://creativecommons.org/licenses/by/4.0/">
+<p>©2024 scienxlab &nbsp; | &nbsp; Licensed CC BY 4.0 &nbsp; | &nbsp; Reuse and share</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
