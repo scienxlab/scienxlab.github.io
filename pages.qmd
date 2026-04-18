@@ -1,0 +1,7 @@
+---
+title: "Pages"
+image: images/scienxlab.png
+listing:
+  contents: pages
+  type: table
+---

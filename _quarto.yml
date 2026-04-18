@@ -12,6 +12,7 @@ website:
     logo: "images/scienxlab.png"
     right:
       - blog.qmd
+      - pages.qmd
       - about.qmd
       - icon: rss
         href: blog.xml

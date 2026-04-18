@@ -4,3 +4,5 @@ drafts/
 _site/
 .ipynb_checkpoints
 
+
+**/*.quarto_ipynb
