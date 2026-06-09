@@ -8,9 +8,91 @@
 <title>scienxlab</title>
 <link>https://scienxlab.org/blog.html</link>
 <atom:link href="https://scienxlab.org/blog.xml" rel="self" type="application/rss+xml"/>
-<description>An open access scientific computing laboratory.</description>
-<generator>quarto-1.9.37</generator>
-<lastBuildDate>Mon, 26 Feb 2024 00:00:00 GMT</lastBuildDate>
+<description>An open access scientific computing playground.</description>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Tue, 09 Jun 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Open for Energy</title>
+  <dc:creator>Matt Hall</dc:creator>
+  <dc:creator>Guillermo Vargas</dc:creator>
+  <link>https://scienxlab.org/blog/open-for-energy/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://scienxlab.org/blog/open-for-energy/open-for-energy.jpg" class="img-fluid figure-img"></p>
+<figcaption>Matt started things off with a look at some big themes in open source in 2026</figcaption>
+</figure>
+</div>
+<p>On Sunday <a href="https://www.linkedin.com/in/gavargas/">Guillermo Vargas</a> (Shell) and I hosted the 4th EAGE open source workshop, <em>Open for Energy</em>. The first of these sessions was hosted by Joe Dellinger (BP) in Vienna in 2006; dGB had only recently released OpendTect, Chuck Mosher’s JavaSeis was brand new, and Sergey Fomel’s Madagascar was launched at that workshop. I was not there, I can only imagine that the session was full of hope and expectation.</p>
+<p>Hope and expectation still prevail, but there is a good dollop of uncertainty, maybe even a little fear —&nbsp;but also plenty of new questions and more than enough curiosity and creativity to start answering them.</p>
+<p>Here’s what we heard:</p>
+<section id="matteo-ravasi-shearwater-from-pet-project-to-fiscally-supported-workhorse" class="level2">
+<h2 class="anchored" data-anchor-id="matteo-ravasi-shearwater-from-pet-project-to-fiscally-supported-workhorse">Matteo Ravasi, Shearwater: from pet project to fiscally supported workhorse</h2>
+<p><a href="https://pylops.readthedocs.io/en/stable/">PyLOps</a> —&nbsp;Python linear operators — started at Statoil when Matteo worked there. At the time, there was a conscious effort by the company to publish more open-source, and proper documentation, testing, and a trustworthy architecture were hard requirements. Matteo directly pointed to this foundation as a success factor for the project. After leaving Equinor, Matteo guided the project into the <a href="https://numfocus.org/">NumFOCUS</a> portfolio, and this provided access to <a href="https://summerofcode.withgoogle.com/">Google’s Summer of Code</a>allowing for someone to be paid to accomplish very high impact but difficult to achieve features. Today, PyLOps is used daily for serious work so if you haven’t seen it yet —&nbsp;<a href="https://github.com/PyLops/pylops">check out the repo</a>.</p>
+</section>
+<section id="julien-moreau-the-nw-edge-open-hardware-for-hydrogen-detection" class="level2">
+<h2 class="anchored" data-anchor-id="julien-moreau-the-nw-edge-open-hardware-for-hydrogen-detection">Julien Moreau, The NW Edge: open hardware for hydrogen detection</h2>
+<p>Open hardware does not often attract much attention, certainly not in earth science, but <a href="https://github.com/boorhin">Julien (GitHub)</a> wants to change that. He showed some “data” from a commercial H<sub>2</sub> sensor that must have had a signal:noise ratio close to zero. So, using off-the-shelf components and well-honed hacking skills, he built a water-cooled device that he has deployed in both rural France and in volcanic fumaroles in Djibouti. And the data is beautiful! His lesson for everyone: complexity only adds cost, reduces maintainability, and ultimately excludes ordinary users. The only problem he has now is: how do you actually share a hydrogen detector? 🤔</p>
+</section>
+<section id="collin-cronkite-ratcliff-usgs-modern-public-domain-software" class="level2">
+<h2 class="anchored" data-anchor-id="collin-cronkite-ratcliff-usgs-modern-public-domain-software">Collin Cronkite-Ratcliff, USGS: modern public domain software</h2>
+<p>The USGS was founded in 1879, so maybe it’s natural that some legacy projects only exist as punch cards for Fortran. For example, the <a href="https://code.usgs.gov/gmegsc/gravmagsubs">gravmagsubs</a> project is partly based on <a href="https://pubs.usgs.gov/of/1977/0535/report.pdf">Plouff 1977</a> (check out the original code listing in the link!). Like the rest of the US federal government, USGS products are mostly public domain —&nbsp;so there’s a strong “open by default” policy and, accordingly, the USGS maintains nearly 1000 public domain software (e.g.&nbsp;under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC-0 licenses</a>), mostly <a href="https://code.usgs.gov/usgs">on GitLab</a>. There are packages in hydrology (e.g.&nbsp;MODFLOW) and geophysics, but minerals resources are the hottest current topic (e.g.&nbsp;<a href="https://code.usgs.gov/g3sc/qmra_pooleddata">this R package</a>).</p>
+</section>
+<section id="andrea-morales-gempy-four-pillars-in-the-temple-of-zeus" class="level2">
+<h2 class="anchored" data-anchor-id="andrea-morales-gempy-four-pillars-in-the-temple-of-zeus">Andrea Morales, GemPy: four pillars in the Temple of Zeus</h2>
+<p>Andrea is a researcher at RWTH and a contributor to both <a href="https://www.gempy.org/">GemPy</a> and <a href="https://github.com/gimli-org/pygimli">PyGIMLi</a>. GemPy, open-sourced in 2015, is a tool for structural geological modeling under uncertainty, with PyGIMLi a way to connect geology to geophysics. Andrea focused on the challenges of maintaining open-source projects: GemPy is actively developed and it has a lot of users, but they have found it difficult to construct the four pillars of support they need: <a href="https://www.terranigma-solutions.com/">Terranigma</a> provides consulting and development services on the core tools, <a href="https://www.rwth-aachen.de/go/id/a/?lidx=1">RWTH</a> provides research motivation, the <em>community</em> provides ideas and contributions, while <em>funding</em> provides sustainability. These last two are the big challenges —&nbsp;but Andrea is optimistic about the future. <a href="https://github.com/gempy-project/gempy">GitHub repo.</a></p>
+</section>
+<section id="nanne-hemstra-dgb-proof-that-this-all-works" class="level2">
+<h2 class="anchored" data-anchor-id="nanne-hemstra-dgb-proof-that-this-all-works">Nanne Hemstra, dGB: proof that this all works!</h2>
+<p>dGB Earth Sciences <a href="https://dgbes.com/software/opendtect/">OpendTect</a> is an <a href="https://en.wikipedia.org/wiki/Open-core_model">“open-core”</a> integrated seismic interpretation platform, released as dTect in 2002 and open sourced in 2005. Later, in 2009, it adopted the GPL to help clarify the rights of users and of dGB. Today, it is arguably the most successful open-source project in subsurface, dGB been a persistent innovator in not only software and geoscience but also in business. Nanne highlighted the importance of software architecture and data structures used since the creation of the project, which continue to make it possible to quickly and cleanly add new features and capabilities to the product.</p>
+</section>
+<section id="gerard-gorman-imperial-college-london-a-case-study-of-academic-first-code" class="level2">
+<h2 class="anchored" data-anchor-id="gerard-gorman-imperial-college-london-a-case-study-of-academic-first-code">Gerard Gorman, Imperial College London: a case-study of academic-first code</h2>
+<p><a href="https://github.com/devitocodes/devito">The Devito project</a> is one of the most coherent projects in the computational ggeophysics ecosystem, but it is a relative newcomer having open-sourced in 2016. Echoing Joe Dellinger’s words quoted by me at the start, Gerard’s conviction is that “open source accelerates innovation”. The catch: “sustainability is structurally hard” —&nbsp;and is arguably the unsolved problem in open source. Reflecting on his experience running <a href="https://www.devitocodes.com/">Devito Codes Ltd</a>, Gerard enumerated some myths that, if unacknowledge, hurt sustainability: “open source is free”, “if it’s popular it must be sustainable”, “we can always fork it”, and “AI can replace maintainers”. Sound familiar?</p>
+</section>
+<section id="matt-hall-equinor-inside-a-large-open-source-publisher" class="level2">
+<h2 class="anchored" data-anchor-id="matt-hall-equinor-inside-a-large-open-source-publisher">Matt Hall, Equinor: inside a large open-source publisher</h2>
+<p><a href="https://www.equinor.com/en/">Equinor’s</a> open source efforts, which have been underway since at least 2018, are very much alive. There are around original 500 open source projects on <a href="https://github.com/equinor">the company’s GitHub account today</a>, covering a wide range of domains, from data assimilation to rock physics to robotics. Although this number of repos is a little anomalous in the world of energy, it’s not unusual at all in the world of technology-centric companies. Most developers in Equinor are well aware that the company has an ‘open first’, and many want to participate in it. This strategy has pay-offs in terms of improved code quality and recruiting —&nbsp;but the main motivation is collaboration, for example with research institutes and business partners.</p>
+</section>
+<section id="mark-roberts-tgs-a-modern-seismic-data-format" class="level2">
+<h2 class="anchored" data-anchor-id="mark-roberts-tgs-a-modern-seismic-data-format">Mark Roberts, TGS: a modern seismic data format</h2>
+<p>All geophysicists have opinions about SEG-Y, the venerable seismic exchange format —&nbsp;partly because it lacks a reference implementation, and partly because it was originally designed for tape storage, it has ended up being highly idiosyncratic and poorly suited to modern geophysical computing. Leaning on established technologies, chiefly <a href="https://zarr.dev/">Zarr</a> and <a href="https://xarray.dev/">Xarray</a>, Mark described <a href="https://www.tgs.com/technical-library/mdio-open-source-format-for-multidimensional-energ-data">TGS’s cloud-native storage project MDIO</a>, which the company now uses exclusively. For example, all customer deliveries are produced &amp; streamed from MDIO files, using customer entitlement polygons to apply licenses and policies when necessary. <a href="https://github.com/TGSAI/mdio-python">GitHub repo.</a></p>
+</section>
+<section id="mathias-louboutin-georgia-tech" class="level2">
+<h2 class="anchored" data-anchor-id="mathias-louboutin-georgia-tech">Mathias Louboutin, Georgia Tech</h2>
+<p>Referencing David Donoho’s influential 2024 <a href="https://hdsr.mitpress.mit.edu/pub/g9mau4m0/release/2">paper on frictionless reproducibility</a>, Mathias pointed out that computational geophysics, while doing well on open code, is perhaps lacking open data. The SLIM research team at Georgia Tech, under the direction of Felix Herrmann, is working on foundation models for seismic —&nbsp;a critical piece of the landscape for the sensible application of generative AI in subsurface. Mathias described a multiphysics model representing latent variables → porosity–permeability → CO<sub>2</sub> → wavespeed → timelapse data where everyone one of those arrows is differentiable. A good way in to this world is probably to start with the <a href="https://github.com/slimgroup/InvertibleNetworks.jl"><code>InvertibleNetworks.jl</code></a> library.</p>
+</section>
+<section id="john-stevenson-bgs-a-qgis-plugin-for-field-geology" class="level2">
+<h2 class="anchored" data-anchor-id="john-stevenson-bgs-a-qgis-plugin-for-field-geology">John Stevenson, BGS: a QGIS plugin for field geology</h2>
+<p>John is Research Software Engineering Lead at <a href="https://www.bgs.ac.uk/">the British Geological Survey</a> in Edinburgh. (If you have not heard of it, reseach software engineering is the newly recognized role of properly supporting an organization’s scientific and technical computing effort; check out <a href="https://society-rse.org/">the Society of Research Software Engineering</a>.) Thanks to John and others, the BGS is a big user of the icon open-source GIS <a href="https://qgis.org/">QGIS</a>, and John highlighted the usefulness of QGIS as a platform for software delivery with CRAG, for the Collection and Reporting of Associated Geodata. The plugin enables field geologists to connect field observations with photos and sketches to help create georefenced projects. They store everything using <a href="https://www.geopackage.org/">the GeoPackage format</a> —&nbsp;more testimony to the superiority of modern open formats over legacy propietary ones. CRAG will be released soon on <a href="https://github.com/BritishGeologicalSurvey">the BGS GitHub</a>.</p>
+</section>
+<section id="shaowen-wang-kaust-waveform-solutions-for-any-occasion" class="level2">
+<h2 class="anchored" data-anchor-id="shaowen-wang-kaust-waveform-solutions-for-any-occasion">Shaowen Wang, KAUST: waveform solutions for any occasion</h2>
+<p>Shaowen recently finished his PhD as part of the DeepWave consortium at KAUST, working on SWEEP. The marketing headline for SWEEP does sound very cool: “What if every seismic wave equation could live in one memory-efficient, multi-platform package?”. The pipeline uses the Devito symbolic domain-specific language, <a href="https://github.com/adjtomo/seisflows">SeisFlows</a>, <a href="https://zenodo.org/records/8381177">the Deepwave toolbox</a> and Shaowen’s <a href="https://arxiv.org/abs/2604.14189">own SWEEP tool</a>, the ‘seismic wave equation exploration platform’. The general idea is to support a wide range of use-cases with simple ‘menus’ of options: acoustic or elastic, Torch or Jax, 32-bit or 16, forward model or FWI –&nbsp;then to execute the plan. <a href="https://github.com/DeepWave-KAUST/sweep">GitHub repo.</a></p>
+</section>
+<section id="bob-clapp-google-x-open-models-synthetics" class="level2">
+<h2 class="anchored" data-anchor-id="bob-clapp-google-x-open-models-synthetics">Bob Clapp, Google X: open models &amp; synthetics</h2>
+<p>A legend of geophysical programming, Bob started off with the timeline of his involvement in SEPLib. I could have happily listed to a couple of hours of these stories, but he compressed 30 years of geophysical programming into about 2 minutes! The story included adventures with SEP model builder and CUDA, and segued into his current project: generating 10’s to 100’s of procedurally generated earth models with corresponding seismic volumes. A sort of “Marmousi generator” perhaps… except I didn’t catch if the model emits a single pseudo-final-stack volume or is even capable of producing gathers. (If it doesn’t today, I’m certain it will soon.) Bob’s team is <a href="https://icml.cc/virtual/2026/poster/61078">presenting their work</a> at ICML in Seoul, Korea, at the beginning of July; I expect we will see the first release of these models around that time.</p>
+</section>
+<section id="what-is-the-state-today" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-the-state-today">What is the state today?</h2>
+<p>After a full day of hearing these stories and animated discussion, I felt we had gathered some important data —&nbsp;and maybe anecdata –&nbsp;but not really been able to process much of it. No doubt each will have their own take on what insights these stories and data lead to. But I think a few themes emerged, as well as some ideas what the future might hold.</p>
+<p><strong>I will try to summarize and look ahead in a future post. Soon!</strong></p>
+<hr>
+<p><small>For the record, the following open source superheroes came to the session: Matteo Ravasi (Shearwater), Julien Moreau (The NW-Edge), Collin Cronkite-Ratcliff (USGS), Andrea Balza Morales (RWTH Aachen), Nanne Hemstra (dGB), Gerard Gorman (Imperial College London), Mark Roberts (TGS), Mathias Louboutin (Georgia Tech), John Stevenson (BGS), Shaowen Wang (KAUST), Matt Hall (Equinor), Guillermo Vargas (Shell), Einar Landre (Equinor), Doug McClymont (Tullow), Tariq Alkhalifah (KAUST).</small></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://scienxlab.org/blog/open-for-energy/</guid>
+  <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Practice your form</title>
   <dc:creator>Matt Hall</dc:creator>

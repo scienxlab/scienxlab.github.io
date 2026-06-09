@@ -1,7 +1,15 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/pages.html",
     "items": [
+      "/pages/seg-y.html",
+      "/pages/unsolved-problems.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/open-for-energy/index.html",
       "/blog/practice-form.html",
       "/blog/no-more-ai-cliches/index.html",
       "/blog/deepwind-hackathon-projects/index.html",
@@ -15,15 +23,9 @@
     ]
   },
   {
-    "listing": "/pages.html",
+    "listing": "/index.html",
     "items": [
-      "/pages/seg-y.html",
-      "/pages/unsolved-problems.html"
-    ]
-  },
-  {
-    "listing": "/blog.html",
-    "items": [
+      "/blog/open-for-energy/index.html",
       "/blog/practice-form.html",
       "/blog/no-more-ai-cliches/index.html",
       "/blog/deepwind-hackathon-projects/index.html",
