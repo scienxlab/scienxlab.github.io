@@ -8,7 +8,7 @@ description: "Everything that happened at the 2026 EAGE open source workshop"
 ---
 ![Matt started things off with a look at some big themes in open source in 2026](open-for-energy.jpg)
 
-On Sunday [Guillermo Vargas](https://www.linkedin.com/in/gavargas/) (Shell) and I hosted the 4th EAGE open source workshop, _Open for Energy_. The first of these sessions was hosted by Joe Dellinger (BP) in Vienna in 2006; dGB had only recently released OpendTect, Chuck Mosher's JavaSeis was brand new, and Sergey Fomel's Madagascar was launched at that workshop. I was not there, I can only imagine that the session was full of hope and expectation.
+On Sunday [Guillermo Vargas](https://www.linkedin.com/in/gavargas/) (Shell) and I hosted the 4th EAGE open source workshop, _Open for Energy_, in Aberdeen. The first of these sessions was hosted by Joe Dellinger (BP) in Vienna in 2006; dGB had only recently released OpendTect, Chuck Mosher's JavaSeis was brand new, and Sergey Fomel's Madagascar was launched at that workshop. I was not there, I can only imagine that the session was full of hope and expectation.
 
 Hope and expectation still prevail, but there is a good dollop of uncertainty, maybe even a little fear — but also plenty of new questions and more than enough curiosity and creativity to start answering them.
 
