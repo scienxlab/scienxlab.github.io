@@ -6,8 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Matt Hall">
+<meta name="author" content="Guillermo Vargas">
+<meta name="dcterms.date" content="2026-06-11">
+<meta name="description" content="Reflections on the EAGE open source workshop">
 
-<title>Blog – scienxlab</title>
+<title>Lessons from a workshop – scienxlab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,26 +30,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/scienxlab.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a3f228c23e377d20593bd652999ea9a1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/scienxlab.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a3f228c23e377d20593bd652999ea9a1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,83 +75,33 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<style>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(../images/banner.png);
+background-size: cover;
       }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
+</style>
 
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="scienxlab" href="blog.xml" data-external="1"><meta property="og:title" content="Blog – scienxlab">
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Lessons from a workshop – scienxlab">
+<meta property="og:description" content="Reflections on the EAGE open source workshop">
 <meta property="og:site_name" content="scienxlab">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/scienxlab.png" alt="" class="navbar-logo light-content">
-    <img src="./images/scienxlab.png" alt="" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/scienxlab.png" alt="" class="navbar-logo light-content">
+    <img src="../images/scienxlab.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">scienxlab</span>
     </a>
   </div>
@@ -160,19 +112,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./pages.html"> 
+    <a class="nav-link" href="../pages.html"> 
 <span class="menu-text">Pages</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./blog.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../blog.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -189,343 +141,96 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Lessons from a workshop</h1>
+                  <div>
+        <div class="description">
+          Reflections on the EAGE open source workshop
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Authors</div>
+      <div class="quarto-title-meta-contents">
+               <p>Matt Hall </p>
+               <p>Guillermo Vargas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 11, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div></div></div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p><a href="./open-for-energy/">Earlier this week</a> we summarized the goings-on at the EAGE open source workshop. Turns out Sunday workshops are on the small side —&nbsp;but on the plus side, this did make for plenty of open discussion that everyone could participate in. (Next time I’ll ask for a Monday session!)</p>
+<p>I started the day by reflecting on Joe Dellinger’s words from his summary of the 2006 open source workshop in Vienna:</p>
+<blockquote class="blockquote">
+<p>The economic benefits of a collaborative open-source exploration and production processing and research software environment would be enormous. Skilled geophysicists could spend more of their time doing innovative geophysics instead of mediocre computer science. Technical advances could be quickly shared and reproduced instead of laboriously re-invented and reverse-engineered. Oil companies, contractors, academics, and individuals would all benefit. —&nbsp;Joe Dellinger, 2006, Vienna</p>
+</blockquote>
+<p>Joe’s words and this spirit support my own belief that <strong>software is knowledge sharing</strong>. Concrete, fully specified, executable text files beat hand-wavy best-practice PDFs every day of the week. Especially open source text files!</p>
+<section id="the-fourth-edition" class="level2">
+<h2 class="anchored" data-anchor-id="the-fourth-edition">The fourth edition</h2>
+<p>This was the fourth EAGE open source workshop. Here’s the timeline:</p>
+<ul>
+<li>2006 —&nbsp;EAGE, Vienna</li>
+<li>2012 —&nbsp;EAGE, Copenhagen —&nbsp;<a href="https://agilescientific.com/blog/2012/6/12/two-decades-of-geophysics-freedom.html">blog post</a></li>
+<li>2016 —&nbsp;EAGE, Vienna —&nbsp;<a href="https://agilescientific.com/blog/2016/5/31/open-source-fwi-i-mean-geoscience">blog post</a></li>
+<li>2026 —&nbsp;EAGE, Aberdeen —&nbsp;<a href="https://scienxlab.org/blog/open-for-energy/">blog post</a></li>
+</ul>
+<p>To my knowledge, there have been two other events in a similar vein: one PTTC meeting, and an Agile event that was effectively the Software Underground’s first conference:</p>
+<ul>
+<li>2011 —&nbsp;<a href="https://ahay.org/wiki/Houston_2011">PTTC, Houston</a> —&nbsp;<a href="https://agilescientific.com/blog/2011/6/16/open-seismic-processing-and-dolphins.html">blog post</a></li>
+<li>2019 —&nbsp;TRANSFORM #1, Rouen —&nbsp;<a href="https://agilescientific.com/blog/2019/5/18/transform-happened">blog post</a></li>
+</ul>
+</section>
+<section id="coding-agents-as-users-contributors-maintainers" class="level2">
+<h2 class="anchored" data-anchor-id="coding-agents-as-users-contributors-maintainers">Coding agents as users? Contributors? Maintainers?</h2>
+<p>One of the patterns I learned from <a href="https://www.fatiando.org/">Leo Uieda and his group</a> is “tutorial driven development”. This firmly orients the product around <em>users</em> (who are, for much scientific software, also <em>learners</em>). Matteo (Shearwater) offered expanded advice for starting an open project: focus on documention, tests, and automated project management. This seems especially sensible in the AI era, as it becomes clear that documentation &amp; automation are essential for agents, just as for human collaborators. (And by the way, please can we stop treating them separately?)</p>
+<p>Andrea (RWTH Aachen) mentioned that the volume of incomplete or ambiguous issues is a challenge. This presaged Guillermo’s presentation on using agents to manage and maintain open-source projects with a prototype assistant called <em>Steward</em>. Later, Guillermo and Andrea did a quick proof of concept for finding and closing stale issues.</p>
+<p>If AI feels more like a threat than an opportunity, Julien’s talk on hardware development was perhaps comforting. It seems that some aspects of software development are easier now, but the impact on (and threat to!) hardware development seems less obvious, to us anyway. Creating, iterating, and modifying hardware solutions is necessarily quite messy, with bits of wire, solder spots, and occasional puffs of blue smoke. Designing PCBs and programming FPGAs is objectively much harder than writing web apps. If you’re worried about your future as a coder, maybe <a href="https://blog.oscars.dev/posts/rip-softwarehackathons-long-live-the-hardware-hackathon">now is the time to try hardware hacking</a>?</p>
+</section>
+<section id="the-simple-lesson" class="level2">
+<h2 class="anchored" data-anchor-id="the-simple-lesson">The simple lesson</h2>
+<p>It was striking to hear several people highlight “simplicity by design”. Take Julien: he built a sensitive detector that can be driven across Djibouti, chucked in a boat, dragged up a mountain, and shoved in a volcanic fumarole at 95°. It must be simultaneously robust and hackable with minimal equipment. Every design decision had consequences that, as a field geologist, he understood intuitively. Hence standard industrial tubing, few moving parts, seawater cooling —&nbsp;and running Python on a microcontroller.</p>
+<p>Echoing the sentiment, but in software, Collin (USGS) described building composable UNIX-style command-line tools around plain text data files —&nbsp;and users were grateful for the lack of functionality. Nanna (dGB) said early design decisions in <a href="https://dgbes.com/software/opendtect/">OpendTect</a> paid off in allowing the fast addition of tooling for new seismic data formats. Mark (TGS) attributed their success with MDIO to leaning on existing formats and libraries. And in my own experience, I find people are much more likely to understand and therefore use simple projects. That goes for features too — those that were complex to implement are often the least used.</p>
+</section>
+<section id="myths-of-open-source" class="level2">
+<h2 class="anchored" data-anchor-id="myths-of-open-source">Myths of open source</h2>
+<p>Clearly the greatest myth of all is that “open source is free”, or (relatedly) that you cannot build a business around open source. Open source may be free of charge to you, but someone is paying.</p>
+<p>Gerard Gorman (<a href="https://www.devitocodes.com/">Devito Codes</a>) runs the Devito project with <a href="https://en.wikipedia.org/wiki/Open-core_model">an <em>open-core</em> model</a>: the Devito framework is open source, and Devito Codes Ltd runs around this core. Researchers can do fantastic things with the core ‘out of the box’, while the DevitoPRO offering adds software and services. TerraNigma does the same around GemPy, and dGB uses a similar strategy for OpendTect —&nbsp;and has done this for 20 years.</p>
+<p>It’s a smart model. The organization does not seek ‘charity’ for the open core, rather it chooses to fund the core itself. This helps separate the concerns, for example when talking to customers and investors, who may be unconvinced about open strategies; it is not their concern.</p>
+<p>All this said, one thing about even the small group of maintainers at the workshop was clear: the range of motivations is broad. Openness may be a requirement (as for the USGS), a moral imperative, a commitment to education, expedient for collaboration, or a strategic differentiator. And the range of funding models is correspondingly diverse.</p>
+<hr>
+<p><strong>The day was super fun and I think everyone present felt some cameraderie around the drive to collaborate in scientific software. I only hope that when we do it again, we can attract some people and perspectives from outside our cosy clique. One thing I know about doing hard science, nurturing communities, fundraising, and dealing with a lot of uncertainty is that all of it is easier with more humans.</strong></p>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1781136000000" data-listing-file-modified-sort="1781175178905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="916">
-<div class="thumbnail"><a href="./blog/lessons-from-a-workshop.html" class="no-external">
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</section>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/lessons-from-a-workshop.html" class="no-external">Lessons from a workshop</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/lessons-from-a-workshop.html" class="no-external">
-<p>Reflections on the EAGE open source workshop</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/lessons-from-a-workshop.html" class="no-external">
-<div class="listing-date">
-Jun 11, 2026
-</div>
-<div class="listing-author">
-Matt Hall, Guillermo Vargas
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1780963200000" data-listing-file-modified-sort="1781175178912" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1635">
-<div class="thumbnail"><a href="./blog/open-for-energy/index.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="blog/open-for-energy/open-for-energy.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/open-for-energy/index.html" class="no-external">Open for Energy</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/open-for-energy/index.html" class="no-external">
-<p>Everything that happened at the 2026 EAGE open source workshop</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/open-for-energy/index.html" class="no-external">
-<div class="listing-date">
-Jun 9, 2026
-</div>
-<div class="listing-author">
-Matt Hall, Guillermo Vargas
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1708905600000" data-listing-file-modified-sort="1781175178913" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="439">
-<div class="thumbnail"><a href="./blog/practice-form.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/practice-form.html" class="no-external">Practice your form</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/practice-form.html" class="no-external">
-<p>Coding challenges for scientists and engineers</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/practice-form.html" class="no-external">
-<div class="listing-date">
-Feb 26, 2024
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1707177600000" data-listing-file-modified-sort="1781175178909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="819">
-<div class="thumbnail"><a href="./blog/no-more-ai-cliches/index.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="blog/no-more-ai-cliches/google-image-search-ai.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/no-more-ai-cliches/index.html" class="no-external">No more AI clichés</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/no-more-ai-cliches/index.html" class="no-external">
-<p>Stop using these tired AI tropes</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/no-more-ai-cliches/index.html" class="no-external">
-<div class="listing-date">
-Feb 6, 2024
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1705449600000" data-listing-file-modified-sort="1781175178904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="782">
-<div class="thumbnail"><a href="./blog/deepwind-hackathon-projects/index.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="blog/deepwind-hackathon-projects/deepwind-hackathon.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/deepwind-hackathon-projects/index.html" class="no-external">DeepWind hackathon project round-up</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/deepwind-hackathon-projects/index.html" class="no-external">
-<p>What went down at the DeepWind hackathon in Trondheim</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/deepwind-hackathon-projects/index.html" class="no-external">
-<div class="listing-date">
-Jan 17, 2024
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1701648000000" data-listing-file-modified-sort="1781175178904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1121">
-<div class="thumbnail"><a href="./blog/force-hackathon-projects.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/force-hackathon-projects.html" class="no-external">FORCE hackathon project round-up</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/force-hackathon-projects.html" class="no-external">
-<p>All the projects at the FORCE LLM hackathon in Stavanger</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/force-hackathon-projects.html" class="no-external">
-<div class="listing-date">
-Dec 4, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1701475200000" data-listing-file-modified-sort="1781175178914" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="426">
-<div class="thumbnail"><a href="./blog/the-chatbots-are-coming/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/the-chatbots-are-coming/index.html" class="no-external">The chatbots are coming</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/the-chatbots-are-coming/index.html" class="no-external">
-<p>What happened at the FORCE LLM hackathon in Stavanger</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/the-chatbots-are-coming/index.html" class="no-external">
-<div class="listing-date">
-Dec 2, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1701043200000" data-listing-file-modified-sort="1781175178900" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="223">
-<div class="thumbnail"><a href="./blog/a-wind-powered-hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/a-wind-powered-hackathon.html" class="no-external">A wind-powered hackathon</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/a-wind-powered-hackathon.html" class="no-external">
-<p>A new event devoted to offshore wind energy</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/a-wind-powered-hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 27, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1699228800000" data-listing-file-modified-sort="1781175178905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="321">
-<div class="thumbnail"><a href="./blog/im-not-stupid-im-just.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/im-not-stupid-im-just.html" class="no-external">I’m not stupid I’m just…</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/im-not-stupid-im-just.html" class="no-external">
-<p>…curious, …in a hurry, …not that interested</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/im-not-stupid-im-just.html" class="no-external">
-<div class="listing-date">
-Nov 6, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1698710400000" data-listing-file-modified-sort="1781175178913" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="257">
-<div class="thumbnail"><a href="./blog/software-underground-is-moving.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/software-underground-is-moving.html" class="no-external">Software Underground is moving</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/software-underground-is-moving.html" class="no-external">
-<p>The social network for digital geoscientists is moving house</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/software-underground-is-moving.html" class="no-external">
-<div class="listing-date">
-Oct 31, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1698278400000" data-listing-file-modified-sort="1781175178905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="351">
-<div class="thumbnail"><a href="./blog/hackathon-season.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/hackathon-season.html" class="no-external">Hackathon season</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/hackathon-season.html" class="no-external">
-<p>Social coding is still the best coding</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/hackathon-season.html" class="no-external">
-<div class="listing-date">
-Oct 26, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1697414400000" data-listing-file-modified-sort="1781175178914" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="273">
-<div class="thumbnail"><a href="./blog/welcome-to-scienxlab.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/welcome-to-scienxlab.html" class="no-external">Welcome to scienxlab</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/welcome-to-scienxlab.html" class="no-external">
-<p>The blog is back!</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/welcome-to-scienxlab.html" class="no-external">
-<div class="listing-date">
-Oct 16, 2023
-</div>
-<div class="listing-author">
-Matt Hall
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

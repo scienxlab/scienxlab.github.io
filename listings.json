@@ -1,14 +1,25 @@
 [
   {
-    "listing": "/pages.html",
+    "listing": "/index.html",
     "items": [
-      "/pages/seg-y.html",
-      "/pages/unsolved-problems.html"
+      "/blog/lessons-from-a-workshop.html",
+      "/blog/open-for-energy/index.html",
+      "/blog/practice-form.html",
+      "/blog/no-more-ai-cliches/index.html",
+      "/blog/deepwind-hackathon-projects/index.html",
+      "/blog/force-hackathon-projects.html",
+      "/blog/the-chatbots-are-coming/index.html",
+      "/blog/a-wind-powered-hackathon.html",
+      "/blog/im-not-stupid-im-just.html",
+      "/blog/software-underground-is-moving.html",
+      "/blog/hackathon-season.html",
+      "/blog/welcome-to-scienxlab.html"
     ]
   },
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/lessons-from-a-workshop.html",
       "/blog/open-for-energy/index.html",
       "/blog/practice-form.html",
       "/blog/no-more-ai-cliches/index.html",
@@ -23,19 +34,10 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/pages.html",
     "items": [
-      "/blog/open-for-energy/index.html",
-      "/blog/practice-form.html",
-      "/blog/no-more-ai-cliches/index.html",
-      "/blog/deepwind-hackathon-projects/index.html",
-      "/blog/force-hackathon-projects.html",
-      "/blog/the-chatbots-are-coming/index.html",
-      "/blog/a-wind-powered-hackathon.html",
-      "/blog/im-not-stupid-im-just.html",
-      "/blog/software-underground-is-moving.html",
-      "/blog/hackathon-season.html",
-      "/blog/welcome-to-scienxlab.html"
+      "/pages/seg-y.html",
+      "/pages/unsolved-problems.html"
     ]
   }
 ]

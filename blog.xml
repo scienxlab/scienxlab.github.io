@@ -10,7 +10,66 @@
 <atom:link href="https://scienxlab.org/blog.xml" rel="self" type="application/rss+xml"/>
 <description>An open access scientific computing playground.</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Tue, 09 Jun 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 11 Jun 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Lessons from a workshop</title>
+  <dc:creator>Matt Hall</dc:creator>
+  <dc:creator>Guillermo Vargas</dc:creator>
+  <link>https://scienxlab.org/blog/lessons-from-a-workshop.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="./open-for-energy/">Earlier this week</a> we summarized the goings-on at the EAGE open source workshop. Turns out Sunday workshops are on the small side —&nbsp;but on the plus side, this did make for plenty of open discussion that everyone could participate in. (Next time I’ll ask for a Monday session!)</p>
+<p>I started the day by reflecting on Joe Dellinger’s words from his summary of the 2006 open source workshop in Vienna:</p>
+<blockquote class="blockquote">
+<p>The economic benefits of a collaborative open-source exploration and production processing and research software environment would be enormous. Skilled geophysicists could spend more of their time doing innovative geophysics instead of mediocre computer science. Technical advances could be quickly shared and reproduced instead of laboriously re-invented and reverse-engineered. Oil companies, contractors, academics, and individuals would all benefit. —&nbsp;Joe Dellinger, 2006, Vienna</p>
+</blockquote>
+<p>Joe’s words and this spirit support my own belief that <strong>software is knowledge sharing</strong>. Concrete, fully specified, executable text files beat hand-wavy best-practice PDFs every day of the week. Especially open source text files!</p>
+<section id="the-fourth-edition" class="level2">
+<h2 class="anchored" data-anchor-id="the-fourth-edition">The fourth edition</h2>
+<p>This was the fourth EAGE open source workshop. Here’s the timeline:</p>
+<ul>
+<li>2006 —&nbsp;EAGE, Vienna</li>
+<li>2012 —&nbsp;EAGE, Copenhagen —&nbsp;<a href="https://agilescientific.com/blog/2012/6/12/two-decades-of-geophysics-freedom.html">blog post</a></li>
+<li>2016 —&nbsp;EAGE, Vienna —&nbsp;<a href="https://agilescientific.com/blog/2016/5/31/open-source-fwi-i-mean-geoscience">blog post</a></li>
+<li>2026 —&nbsp;EAGE, Aberdeen —&nbsp;<a href="https://scienxlab.org/blog/open-for-energy/">blog post</a></li>
+</ul>
+<p>To my knowledge, there have been two other events in a similar vein: one PTTC meeting, and an Agile event that was effectively the Software Underground’s first conference:</p>
+<ul>
+<li>2011 —&nbsp;<a href="https://ahay.org/wiki/Houston_2011">PTTC, Houston</a> —&nbsp;<a href="https://agilescientific.com/blog/2011/6/16/open-seismic-processing-and-dolphins.html">blog post</a></li>
+<li>2019 —&nbsp;TRANSFORM #1, Rouen —&nbsp;<a href="https://agilescientific.com/blog/2019/5/18/transform-happened">blog post</a></li>
+</ul>
+</section>
+<section id="coding-agents-as-users-contributors-maintainers" class="level2">
+<h2 class="anchored" data-anchor-id="coding-agents-as-users-contributors-maintainers">Coding agents as users? Contributors? Maintainers?</h2>
+<p>One of the patterns I learned from <a href="https://www.fatiando.org/">Leo Uieda and his group</a> is “tutorial driven development”. This firmly orients the product around <em>users</em> (who are, for much scientific software, also <em>learners</em>). Matteo (Shearwater) offered expanded advice for starting an open project: focus on documention, tests, and automated project management. This seems especially sensible in the AI era, as it becomes clear that documentation &amp; automation are essential for agents, just as for human collaborators. (And by the way, please can we stop treating them separately?)</p>
+<p>Andrea (RWTH Aachen) mentioned that the volume of incomplete or ambiguous issues is a challenge. This presaged Guillermo’s presentation on using agents to manage and maintain open-source projects with a prototype assistant called <em>Steward</em>. Later, Guillermo and Andrea did a quick proof of concept for finding and closing stale issues.</p>
+<p>If AI feels more like a threat than an opportunity, Julien’s talk on hardware development was perhaps comforting. It seems that some aspects of software development are easier now, but the impact on (and threat to!) hardware development seems less obvious, to us anyway. Creating, iterating, and modifying hardware solutions is necessarily quite messy, with bits of wire, solder spots, and occasional puffs of blue smoke. Designing PCBs and programming FPGAs is objectively much harder than writing web apps. If you’re worried about your future as a coder, maybe <a href="https://blog.oscars.dev/posts/rip-softwarehackathons-long-live-the-hardware-hackathon">now is the time to try hardware hacking</a>?</p>
+</section>
+<section id="the-simple-lesson" class="level2">
+<h2 class="anchored" data-anchor-id="the-simple-lesson">The simple lesson</h2>
+<p>It was striking to hear several people highlight “simplicity by design”. Take Julien: he built a sensitive detector that can be driven across Djibouti, chucked in a boat, dragged up a mountain, and shoved in a volcanic fumarole at 95°. It must be simultaneously robust and hackable with minimal equipment. Every design decision had consequences that, as a field geologist, he understood intuitively. Hence standard industrial tubing, few moving parts, seawater cooling —&nbsp;and running Python on a microcontroller.</p>
+<p>Echoing the sentiment, but in software, Collin (USGS) described building composable UNIX-style command-line tools around plain text data files —&nbsp;and users were grateful for the lack of functionality. Nanna (dGB) said early design decisions in <a href="https://dgbes.com/software/opendtect/">OpendTect</a> paid off in allowing the fast addition of tooling for new seismic data formats. Mark (TGS) attributed their success with MDIO to leaning on existing formats and libraries. And in my own experience, I find people are much more likely to understand and therefore use simple projects. That goes for features too — those that were complex to implement are often the least used.</p>
+</section>
+<section id="myths-of-open-source" class="level2">
+<h2 class="anchored" data-anchor-id="myths-of-open-source">Myths of open source</h2>
+<p>Clearly the greatest myth of all is that “open source is free”, or (relatedly) that you cannot build a business around open source. Open source may be free of charge to you, but someone is paying.</p>
+<p>Gerard Gorman (<a href="https://www.devitocodes.com/">Devito Codes</a>) runs the Devito project with <a href="https://en.wikipedia.org/wiki/Open-core_model">an <em>open-core</em> model</a>: the Devito framework is open source, and Devito Codes Ltd runs around this core. Researchers can do fantastic things with the core ‘out of the box’, while the DevitoPRO offering adds software and services. TerraNigma does the same around GemPy, and dGB uses a similar strategy for OpendTect —&nbsp;and has done this for 20 years.</p>
+<p>It’s a smart model. The organization does not seek ‘charity’ for the open core, rather it chooses to fund the core itself. This helps separate the concerns, for example when talking to customers and investors, who may be unconvinced about open strategies; it is not their concern.</p>
+<p>All this said, one thing about even the small group of maintainers at the workshop was clear: the range of motivations is broad. Openness may be a requirement (as for the USGS), a moral imperative, a commitment to education, expedient for collaboration, or a strategic differentiator. And the range of funding models is correspondingly diverse.</p>
+<hr>
+<p><strong>The day was super fun and I think everyone present felt some cameraderie around the drive to collaborate in scientific software. I only hope that when we do it again, we can attract some people and perspectives from outside our cosy clique. One thing I know about doing hard science, nurturing communities, fundraising, and dealing with a lot of uncertainty is that all of it is easier with more humans.</strong></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://scienxlab.org/blog/lessons-from-a-workshop.html</guid>
+  <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Open for Energy</title>
   <dc:creator>Matt Hall</dc:creator>
@@ -33,7 +92,7 @@
 <p>Here’s what we heard:</p>
 <section id="matteo-ravasi-shearwater-from-pet-project-to-fiscally-supported-workhorse" class="level2">
 <h2 class="anchored" data-anchor-id="matteo-ravasi-shearwater-from-pet-project-to-fiscally-supported-workhorse">Matteo Ravasi, Shearwater: from pet project to fiscally supported workhorse</h2>
-<p><a href="https://pylops.readthedocs.io/en/stable/">PyLOps</a> —&nbsp;Python linear operators — started at Statoil when Matteo worked there. At the time, there was a conscious effort by the company to publish more open-source, and proper documentation, testing, and a trustworthy architecture were hard requirements. Matteo directly pointed to this foundation as a success factor for the project. After leaving Equinor, Matteo guided the project into the <a href="https://numfocus.org/">NumFOCUS</a> portfolio, and this provided access to <a href="https://summerofcode.withgoogle.com/">Google’s Summer of Code</a>allowing for someone to be paid to accomplish very high impact but difficult to achieve features. Today, PyLOps is used daily for serious work so if you haven’t seen it yet —&nbsp;<a href="https://github.com/PyLops/pylops">check out the repo</a>.</p>
+<p><a href="https://pylops.readthedocs.io/en/stable/">PyLOps</a> —&nbsp;Python linear operators — started at Statoil when Matteo worked there. At the time, there was a conscious effort by the company to publish more open-source, and proper documentation, testing, and a trustworthy architecture were hard requirements. Matteo directly pointed to this foundation as a success factor for the project. After leaving Equinor, Matteo guided the project into the <a href="https://numfocus.org/">NumFOCUS</a> portfolio, and this provided access to <a href="https://summerofcode.withgoogle.com/">Google’s Summer of Code</a> allowing for someone to be paid to accomplish very high impact but difficult to achieve features. Today, PyLOps is used daily for serious work so if you haven’t seen it yet —&nbsp;<a href="https://github.com/PyLops/pylops">check out the repo</a>.</p>
 </section>
 <section id="julien-moreau-the-nw-edge-open-hardware-for-hydrogen-detection" class="level2">
 <h2 class="anchored" data-anchor-id="julien-moreau-the-nw-edge-open-hardware-for-hydrogen-detection">Julien Moreau, The NW Edge: open hardware for hydrogen detection</h2>
