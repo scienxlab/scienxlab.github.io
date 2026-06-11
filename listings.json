@@ -17,6 +17,13 @@
     ]
   },
   {
+    "listing": "/pages.html",
+    "items": [
+      "/pages/seg-y.html",
+      "/pages/unsolved-problems.html"
+    ]
+  },
+  {
     "listing": "/blog.html",
     "items": [
       "/blog/lessons-from-a-workshop.html",
@@ -31,13 +38,6 @@
       "/blog/software-underground-is-moving.html",
       "/blog/hackathon-season.html",
       "/blog/welcome-to-scienxlab.html"
-    ]
-  },
-  {
-    "listing": "/pages.html",
-    "items": [
-      "/pages/seg-y.html",
-      "/pages/unsolved-problems.html"
     ]
   }
 ]
