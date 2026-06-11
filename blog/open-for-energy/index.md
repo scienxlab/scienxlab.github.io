@@ -6,6 +6,7 @@ author:
 date: "2026-06-09"
 description: "Everything that happened at the 2026 EAGE open source workshop"
 ---
+
 ![Matt started things off with a look at some big themes in open source in 2026](open-for-energy.jpg)
 
 On Sunday [Guillermo Vargas](https://www.linkedin.com/in/gavargas/) (Shell) and I hosted the 4th EAGE open source workshop, _Open for Energy_, in Aberdeen. The first of these sessions was hosted by Joe Dellinger (BP) in Vienna in 2006; dGB had only recently released OpendTect, Chuck Mosher's JavaSeis was brand new, and Sergey Fomel's Madagascar was launched at that workshop. I was not there, I can only imagine that the session was full of hope and expectation.
@@ -36,7 +37,7 @@ dGB Earth Sciences [OpendTect](https://dgbes.com/software/opendtect/) is an ["op
  
 ## Gerard Gorman, Imperial College London: a case-study of academic-first code
 
-[The Devito project](https://github.com/devitocodes/devito) is one of the most coherent projects in the computational ggeophysics ecosystem, but it is a relative newcomer having open-sourced in 2016. Echoing Joe Dellinger's words quoted by me at the start, Gerard's conviction is that "open source accelerates innovation". The catch: "sustainability is structurally hard" — and is arguably the unsolved problem in open source. Reflecting on his experience running [Devito Codes Ltd](https://www.devitocodes.com/), Gerard enumerated some myths that, if unacknowledge, hurt sustainability: "open source is free", "if it's popular it must be sustainable", "we can always fork it", and "AI can replace maintainers". Sound familiar?
+[The Devito project](https://github.com/devitocodes/devito) is one of the most coherent projects in the computational ggeophysics ecosystem, but it is a relative newcomer having open-sourced in 2016. Echoing Joe Dellinger's words quoted by me at the start, Gerard's conviction is that "open source accelerates innovation". The catch: "sustainability is structurally hard" — and is arguably the unsolved problem in open source. Reflecting on his experience running [Devito Codes Ltd](https://www.devitocodes.com/), Gerard enumerated some myths that, if unacknowledged, hurt sustainability: "open source is free", "if it's popular it must be sustainable", "we can always fork it", and "AI can replace maintainers". Sound familiar?
 
 ## Matt Hall, Equinor: inside a large open-source publisher
 
@@ -62,12 +63,23 @@ Shaowen recently finished his PhD as part of the DeepWave consortium at KAUST, w
 
 A legend of geophysical programming, Bob started off with the timeline of his involvement in SEPLib. I could have happily listed to a couple of hours of these stories, but he compressed 30 years of geophysical programming into about 2 minutes! The story included adventures with SEP model builder and CUDA, and segued into his current project: generating 10's to 100's of procedurally generated earth models with corresponding seismic volumes. A sort of "Marmousi generator" perhaps... except I didn't catch if the model emits a single pseudo-final-stack volume or is even capable of producing gathers. (If it doesn't today, I'm certain it will soon.) Bob's team is [presenting their work](https://icml.cc/virtual/2026/poster/61078) at ICML in Seoul, Korea, at the beginning of July; I expect we will see the first release of these models around that time.
 
+## Guillermo Vargas, Shell: agents as maintainers?
+
+Sometimes AI assistance feels anti-collaborative, tending to emphasize personal gains over collaboration. But how we use tools is our choice as developers. In the final act of the day, Guillermo demoed what other patterns might be possible with coding agents. His agent _Steward_ has instructions to help open-source project maintainers with their chores. It checks the 'open source readiness' of the repo (e.g. the existence of an open license and a `CONTRIBUTING.md` file), and makes PRs with fixes. It can also help with issue triage... so what else could it do?
+
 ## What is the state today?
 
 After a full day of hearing these stories and animated discussion, I felt we had gathered some important data — and maybe anecdata – but not really been able to process much of it. No doubt each will have their own take on what insights these stories and data lead to. But I think a few themes emerged, as well as some ideas what the future might hold.
 
-**I will try to summarize and look ahead in a future post. Soon!**
+**[UPDATED] I summarized some themes in a follow-up post, check it out.](./lessons-from-a-workshop.html)**
 
 ---
 
 <small>For the record, the following open source superheroes came to the session: Matteo Ravasi (Shearwater), Julien Moreau (The NW-Edge), Collin Cronkite-Ratcliff (USGS), Andrea Balza Morales (RWTH Aachen), Nanne Hemstra (dGB), Gerard Gorman (Imperial College London), Mark Roberts (TGS), Mathias Louboutin (Georgia Tech), John Stevenson (BGS), Shaowen Wang (KAUST), Matt Hall (Equinor), Guillermo Vargas (Shell), Einar Landre (Equinor), Doug McClymont (Tullow), Tariq Alkhalifah (KAUST).</small>
+
+---
+
+### Changelog
+
+- **2026-06-11** — added link to the follow-up post
+- **2026-06-11** — added Guillermo's demo to the list of presentations
