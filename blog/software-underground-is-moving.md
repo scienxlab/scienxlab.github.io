@@ -3,6 +3,8 @@ title: "Software Underground is moving"
 author: "Matt Hall"
 date: "2023-10-31"
 description: "The social network for digital geoscientists is moving house"
+categories:
+  - communities
 ---
 
 [The Software Underground](https://softwareunderground.org/) — a free chat group, a community, a movement — is moving to the Mattermost platform. As of right now, it lives at [**mattermost.softwareunderground.org**](https://mattermost.softwareunderground.org/).

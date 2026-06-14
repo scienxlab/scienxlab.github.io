@@ -3,6 +3,8 @@ title: "I'm not stupid I'm just…"
 author: "Matt Hall"
 date: "2023-11-06"
 description: "…curious, …in a hurry, …not that interested"
+categories:
+  - communication
 ---
 
 People with a lot of expertise (I [don't like](https://agilescientific.com/blog/2013/6/19/expert-culture-is-bad-for-you.html) the word 'expert') can help others learn and improve by writing. As a bonus, the act of writing reflexively sharpens the expertise. Everyone wins!

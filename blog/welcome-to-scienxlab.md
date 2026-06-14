@@ -3,6 +3,8 @@ title: "Welcome to scienxlab"
 author: "Matt Hall"
 date: "2023-10-16"
 description: "The blog is back!"
+categories:
+  - communication
 ---
 
 **A lot has happened in the 413 days since [my last blog post](https://agilescientific.com/blog/2022/8/29/a-machine-learning-safety-net).**

@@ -3,6 +3,8 @@ title: "Practice your form"
 author: "Matt Hall"
 date: "2024-02-26"
 description: "Coding challenges for scientists and engineers"
+categories:
+  - programming
 ---
 
 **Years ago, I learned karate.** I never really got into the sparring side of the sport and eventually stopped, but I loved the mindful practice involved in one aspect of it: **kata**, or 形. The word means 'form', and the focus is on quality, not speed, power, or quantity. I spent hours in a squash court at the YMCA in Calgary, learning the elements of karate, one move at a time, very slowly.

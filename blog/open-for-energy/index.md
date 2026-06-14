@@ -5,6 +5,9 @@ author:
   - Guillermo Vargas
 date: "2026-06-09"
 description: "Everything that happened at the 2026 EAGE open source workshop"
+categories:
+  - events
+  - open source
 ---
 
 ![Matt started things off with a look at some big themes in open source in 2026](open-for-energy.jpg)
@@ -71,7 +74,7 @@ Sometimes AI assistance feels anti-collaborative, tending to emphasize personal 
 
 After a full day of hearing these stories and animated discussion, I felt we had gathered some important data — and maybe anecdata – but not really been able to process much of it. No doubt each will have their own take on what insights these stories and data lead to. But I think a few themes emerged, as well as some ideas what the future might hold.
 
-**[UPDATED] I summarized some themes in a follow-up post, check it out.](./lessons-from-a-workshop.html)**
+**[UPDATED] I summarized some themes in [a follow-up post, check it out.](./lessons-from-a-workshop.html)**
 
 ---
 

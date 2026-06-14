@@ -3,6 +3,9 @@ title: "No more AI clichés"
 author: "Matt Hall"
 date: "2024-02-06"
 description: "Stop using these tired AI tropes"
+categories:
+  - ai
+  - safety
 ---
 
 The recent resurgence of the word 'AI' (it seems like more than a mere abbreviation) brings new communication challenges. The term is so overloaded with so many conflicting meanings as to be useless on its own, without careful delineation. But even a blunt instrument can be useful &mdash; and sometimes an advantage. Just remember to sharpen it when you need to.

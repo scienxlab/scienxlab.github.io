@@ -3,6 +3,8 @@ title: "Hackathon season"
 author: "Matt Hall"
 date: "2023-10-26"
 description: "Social coding is still the best coding"
+categories:
+  - events
 ---
 
 **Hackathons aren't what they used to be. I think they're even better.**

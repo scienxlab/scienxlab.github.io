@@ -5,6 +5,9 @@ author:
   - Guillermo Vargas
 date: "2026-06-11"
 description: "Reflections on the EAGE open source workshop"
+categories:
+  - open source
+  - events
 ---
 
 [Earlier this week](./open-for-energy/) we summarized the goings-on at the EAGE open source workshop. Turns out Sunday workshops are on the small side — but on the plus side, this did make for plenty of open discussion that everyone could participate in. (Next time we'll ask for a Monday session!)

@@ -3,6 +3,9 @@ title: "A wind-powered hackathon"
 author: "Matt Hall"
 date: "2023-11-27"
 description: "A new event devoted to offshore wind energy"
+categories:
+  - events
+  - wind
 ---
 
 **If you like hackathons, love solving difficult problems, and have a laptop and a good winter coat, then start getting excited!**

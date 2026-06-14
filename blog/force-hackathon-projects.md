@@ -3,6 +3,9 @@ title: "FORCE hackathon project round-up"
 author: "Matt Hall"
 date: "2023-12-04"
 description: "All the projects at the FORCE LLM hackathon in Stavanger"
+categories:
+  - events
+  - ai
 ---
 
 🤖 **Yesterday, I summed up last week's FORCE large language model hackathon, which took place last week in Stavanger, Norway. Today, let's look more closely at the projects our hackers worked on...**

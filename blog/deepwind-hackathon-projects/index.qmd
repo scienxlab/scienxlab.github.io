@@ -3,6 +3,9 @@ title: "DeepWind hackathon project round-up"
 author: "Matt Hall"
 date: "2024-01-17"
 description: "What went down at the DeepWind hackathon in Trondheim"
+categories:
+  - wind
+  - events
 ---
 
 **The [DeepWind Hackathon](https://scienxlab.org/blog/a-wind-powered-hackathon.html) happened! It was just as awesome as I thought it would be, with the usual mix of diverse expertise and insight from across Europe and the Americas. I hope it's the first of many wind-related events, stay tuned!**
