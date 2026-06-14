@@ -74,6 +74,8 @@
 </section>
 
  ]]></description>
+  <category>open source</category>
+  <category>events</category>
   <guid>https://scienxlab.org/blog/lessons-from-a-workshop.html</guid>
   <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
 </item>
@@ -152,7 +154,7 @@
 <section id="what-is-the-state-today" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-the-state-today">What is the state today?</h2>
 <p>After a full day of hearing these stories and animated discussion, I felt we had gathered some important data —&nbsp;and maybe anecdata –&nbsp;but not really been able to process much of it. No doubt each will have their own take on what insights these stories and data lead to. But I think a few themes emerged, as well as some ideas what the future might hold.</p>
-<p><strong>[UPDATED] I summarized some themes in a follow-up post, check it out.](./lessons-from-a-workshop.html)</strong></p>
+<p><strong>[UPDATED] I summarized some themes in <a href="./lessons-from-a-workshop.html">a follow-up post, check it out.</a></strong></p>
 <hr>
 <p><small>For the record, the following open source superheroes came to the session: Matteo Ravasi (Shearwater), Julien Moreau (The NW-Edge), Collin Cronkite-Ratcliff (USGS), Andrea Balza Morales (RWTH Aachen), Nanne Hemstra (dGB), Gerard Gorman (Imperial College London), Mark Roberts (TGS), Mathias Louboutin (Georgia Tech), John Stevenson (BGS), Shaowen Wang (KAUST), Matt Hall (Equinor), Guillermo Vargas (Shell), Einar Landre (Equinor), Doug McClymont (Tullow), Tariq Alkhalifah (KAUST).</small></p>
 <hr>
@@ -168,6 +170,8 @@
 </section>
 
  ]]></description>
+  <category>events</category>
+  <category>open source</category>
   <guid>https://scienxlab.org/blog/open-for-energy/</guid>
   <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
 </item>
@@ -277,6 +281,7 @@ font-style: inherit;">print</span>(r.text)</span></code></pre></div></div>
 </section>
 
  ]]></description>
+  <category>programming</category>
   <guid>https://scienxlab.org/blog/practice-form.html</guid>
   <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
 </item>
@@ -370,6 +375,8 @@ font-style: inherit;">print</span>(r.text)</span></code></pre></div></div>
 </section>
 
  ]]></description>
+  <category>ai</category>
+  <category>safety</category>
   <guid>https://scienxlab.org/blog/no-more-ai-cliches/</guid>
   <pubDate>Tue, 06 Feb 2024 00:00:00 GMT</pubDate>
 </item>
@@ -449,6 +456,8 @@ font-style: inherit;">print</span>(r.text)</span></code></pre></div></div>
 </section>
 
  ]]></description>
+  <category>wind</category>
+  <category>events</category>
   <guid>https://scienxlab.org/blog/deepwind-hackathon-projects/</guid>
   <pubDate>Wed, 17 Jan 2024 00:00:00 GMT</pubDate>
 </item>
@@ -526,6 +535,8 @@ font-style: inherit;">print</span>(r.text)</span></code></pre></div></div>
 </section>
 
  ]]></description>
+  <category>events</category>
+  <category>ai</category>
   <guid>https://scienxlab.org/blog/force-hackathon-projects.html</guid>
   <pubDate>Mon, 04 Dec 2023 00:00:00 GMT</pubDate>
 </item>
@@ -602,6 +613,8 @@ font-style: inherit;">print</span>(r.text)</span></code></pre></div></div>
 
 
  ]]></description>
+  <category>events</category>
+  <category>wind</category>
   <guid>https://scienxlab.org/blog/a-wind-powered-hackathon.html</guid>
   <pubDate>Mon, 27 Nov 2023 00:00:00 GMT</pubDate>
 </item>
@@ -635,6 +648,7 @@ font-style: inherit;">print</span>(r.text)</span></code></pre></div></div>
 
 
  ]]></description>
+  <category>communication</category>
   <guid>https://scienxlab.org/blog/im-not-stupid-im-just.html</guid>
   <pubDate>Mon, 06 Nov 2023 00:00:00 GMT</pubDate>
 </item>
@@ -662,6 +676,7 @@ font-style: inherit;">print</span>(r.text)</span></code></pre></div></div>
 
 
  ]]></description>
+  <category>communities</category>
   <guid>https://scienxlab.org/blog/software-underground-is-moving.html</guid>
   <pubDate>Tue, 31 Oct 2023 00:00:00 GMT</pubDate>
 </item>
@@ -697,6 +712,7 @@ font-style: inherit;">print</span>(r.text)</span></code></pre></div></div>
 </section>
 
  ]]></description>
+  <category>events</category>
   <guid>https://scienxlab.org/blog/hackathon-season.html</guid>
   <pubDate>Thu, 26 Oct 2023 00:00:00 GMT</pubDate>
 </item>
@@ -721,6 +737,7 @@ font-style: inherit;">print</span>(r.text)</span></code></pre></div></div>
 
 
  ]]></description>
+  <category>communication</category>
   <guid>https://scienxlab.org/blog/welcome-to-scienxlab.html</guid>
   <pubDate>Mon, 16 Oct 2023 00:00:00 GMT</pubDate>
 </item>
