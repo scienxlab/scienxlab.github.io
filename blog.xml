@@ -10,7 +10,114 @@
 <atom:link href="https://scienxlab.org/blog.xml" rel="self" type="application/rss+xml"/>
 <description>An open access scientific computing playground.</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Thu, 11 Jun 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 15 Jun 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>The state of subsurface open source in 2026</title>
+  <dc:creator>Matt Hall</dc:creator>
+  <link>https://scienxlab.org/blog/open-source-in-2026/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://scienxlab.org/blog/open-source-in-2026/share_cc_by_stgtspottings.png" class="img-fluid figure-img"></p>
+<figcaption>CC BY stgtspottings.com</figcaption>
+</figure>
+</div>
+<p>Ahead of the EAGE workshop <a href="./open-for-energy">last week</a>, I was unsure if we were going to find <strong>open source</strong> in good health, or reading its last will &amp; testament… maybe even performing CPR. In the event, we established that open source is very much alive —&nbsp;but I knew before the meeting that the sample would not be big enough to represent the whole community.</p>
+<p>So at the end of May I ran a survey. I shared the Google Forms survey on LinkedIn and in <a href="https://softwareunderground.org/">Software Underground</a> on 18 May, and closed the survey on the day of the workshop on 7 June, giving 20 days during which the form received 97 anonymous responses.</p>
+<p>I realized right away that, if I wanted the survey to be easy to complete, it would be very difficult to ask everything I wanted to ask. I wanted to know about people’s own attitudes and activities, and those of their employers and collaborators. I wanted to know about open source in general, and subsurface science and engineering in particular. I wanted to know how things are today, and how they are changing over time. In the end, focusing on the current state of things, I setttled on 30 questions addressing five aspects of open source:</p>
+<ul>
+<li>Use of open source software.</li>
+<li>Activities as a core contributor (i.e.&nbsp;maintainer).</li>
+<li>Activities as a non-core contributor.</li>
+<li>Artificial intelligence.</li>
+<li>Funding and sustainability.</li>
+</ul>
+<p><a href="https://github.com/kwinkunks/open-source-survey-2026">📁 <strong>All the results can be found here.</strong></a> <strong>This post looks at some highlights from the responses.</strong></p>
+<section id="demographics" class="level2">
+<h2 class="anchored" data-anchor-id="demographics">Demographics</h2>
+<p>When looking at all of this data, remember that we’re only looking at a small subset of people that (a) I reached and (b) responded. Of course, there’s quite a bit of sample bias here.</p>
+<ul>
+<li>97 responses, mostly from Europe (43) and North America (30).</li>
+<li>Most respondents are applied scientists (62) or coders and data scientists (26).</li>
+<li>Nearly a third (29) of respondents are in organizations with more than 10 000 employees; about a third (34) in orgs smaller than 100.</li>
+<li>Respondents work in service and technology companies (30), operating companies (27) and academia (21):</li>
+</ul>
+<p><img src="https://scienxlab.org/blog/open-source-in-2026/domain-by-sector.png" class="img-fluid"></p>
+</section>
+<section id="open-source" class="level2">
+<h2 class="anchored" data-anchor-id="open-source">Open source</h2>
+<p>To try to capture the current state, most of the questions in all sections asked respondents to consider only the most recent six months when answering.</p>
+<ul>
+<li>65 respondents work in teams that strongly prefer or lean towards open-source technical tooling.</li>
+<li>67 respondents use open-source software at least weekly for subsurface workflows.</li>
+<li>When people choose open options for technical work, three reasons dominate: extensiblity, transparency (of functionality like algorithms) and cost, with 56 to 60 respondents choosing each of these features.</li>
+</ul>
+</section>
+<section id="maintaining-projects" class="level2">
+<h2 class="anchored" data-anchor-id="maintaining-projects">Maintaining projects</h2>
+<ul>
+<li>A third of respondents (33) are maintainers (this role includes core contributors) of open-source projects. Of these, 27 help maintain at least one subsurface-related project.</li>
+<li>12 of the 33 maintainers work alone on their primary project; 4 of 33 have six or more co-maintainers.</li>
+<li>9 of the primary projects of the 33 maintainers are unfunded.</li>
+<li>I asked how maintainers feel about some specific tasks in the near future:</li>
+</ul>
+<p><img src="https://scienxlab.org/blog/open-source-in-2026/core-contributors-looking-ahead.png" class="img-fluid"></p>
+</section>
+<section id="contributing-to-projects" class="level2">
+<h2 class="anchored" data-anchor-id="contributing-to-projects">Contributing to projects</h2>
+<ul>
+<li>39 respondents contributed to at least one project they do not maintain. A few (7) people make at least one contribution per month.</li>
+<li>The main barrier to contribution is a lack of time, incentive, or permission (perceived or otherwise), with 47 respondents choosing these reasons.</li>
+<li>The top contribution types: creating issues (25 respondents, so 64% of those making contributions), small documentation fixes (18, or 46%), non-critical bug fixes (16), new tests (14), and new features (13).</li>
+</ul>
+</section>
+<section id="artificial-intelligence" class="level2">
+<h2 class="anchored" data-anchor-id="artificial-intelligence">Artificial intelligence</h2>
+<p>Open source has a complicated relationship with AI, as most of the rest of the world. Maintainers and would-be contributors sense it could help with some tasks, while it also seems to present some new security challenges —&nbsp;and the threat of sloppy contributions that no-one wants to review.</p>
+<ul>
+<li>60 respondents use AI assistants or agentic tools daily; 12 rarely or never use them.</li>
+<li>Those using AI less often tend to have less trust in the technology (see below).</li>
+<li>There is no correspondence between trust and those having maintainer roles:</li>
+</ul>
+<p><img src="https://scienxlab.org/blog/open-source-in-2026/trust-in-ai-assistance.png" class="img-fluid"></p>
+<ul>
+<li>Respondents are slightly more concerned about IP issues in upstream dependencies (only 22 not concerned) than they are about introducing such problems into their own code (28 not concerned).</li>
+<li>People think AI may improve access to technology: 71 respondents agree that AI code assitants lower the barrier for non-programmers to use digital products, while 51 respondents agree that AI lowers the barrier for non-programmers to contribute to projects.</li>
+</ul>
+</section>
+<section id="organizations" class="level2">
+<h2 class="anchored" data-anchor-id="organizations">Organizations</h2>
+<ul>
+<li>Only 16 respondents report leader resistance to open source; 59 respondents report support or enthusiasm among leadership.</li>
+<li>Only 7 respondents work in organizations that have eastablished open source program offices (OSPOs). Only 12 report their organization funding open source activities.</li>
+<li>31 have organizations with expressed preference for open source, with&nbsp;20 respondents reporting a “clear and visible” open source strategy.</li>
+<li>Some respondents have been affected by various kinds of disruption to open source projects they depend on:</li>
+</ul>
+<p><img src="https://scienxlab.org/blog/open-source-in-2026/open-source-glitches-for-orgs.png" class="img-fluid"></p>
+</section>
+<section id="the-future" class="level2">
+<h2 class="anchored" data-anchor-id="the-future">The future</h2>
+<p>The last question was about the health of the subsurface open source ecosystem. While only 3 people characterize the situation as ‘critical’, 40 respondents (41%) believe it to be at risk. On the other hand, 57 think it is at least stable and a handful believe it to be ‘robust’.</p>
+<p><strong>An approximately normal distribution, but skewed positive — a good description of the community itself!</strong></p>
+<hr>
+<p><a href="https://github.com/kwinkunks/open-source-survey-2026"><em>All the data and results are on GitHub</em></a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>open source</category>
+  <category>communities</category>
+  <category>ai</category>
+  <category>programming</category>
+  <guid>https://scienxlab.org/blog/open-source-in-2026/</guid>
+  <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Lessons from a workshop</title>
   <dc:creator>Matt Hall</dc:creator>

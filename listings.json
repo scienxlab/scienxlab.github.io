@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/blog/open-source-in-2026/index.html",
       "/blog/lessons-from-a-workshop.html",
       "/blog/open-for-energy/index.html",
       "/blog/practice-form.html",
@@ -26,6 +27,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/open-source-in-2026/index.html",
       "/blog/lessons-from-a-workshop.html",
       "/blog/open-for-energy/index.html",
       "/blog/practice-form.html",
