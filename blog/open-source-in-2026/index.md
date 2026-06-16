@@ -12,7 +12,7 @@ categories:
 
 ![CC BY stgtspottings.com](share_cc_by_stgtspottings.png)
 
-Ahead of the EAGE workshop [last week](./open-for-energy), I was unsure if we were going to find **open source** in good health, or reading its last will & testament... maybe even performing CPR. In the event, we established that open source is very much alive — but I knew before the meeting that the sample would not be big enough to represent the whole community.
+Ahead of the EAGE workshop [last week](../open-for-energy), I was unsure if we were going to find **open source** in good health, or reading its last will & testament... maybe even performing CPR. In the event, we established that open source is very much alive — but I knew before the meeting that the sample would not be big enough to represent the whole community.
 
 So at the end of May I ran a survey. I shared the Google Forms survey on LinkedIn and in [Software Underground](https://softwareunderground.org/) on 18 May, and closed the survey on the day of the workshop on 7 June, giving 20 days during which the form received 97 anonymous responses.
 
