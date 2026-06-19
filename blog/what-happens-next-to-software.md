@@ -1,7 +1,7 @@
 ---
 title: "What happens next to software development?"
 author: "Matt Hall"
-date: "2026-06-11"
+date: "2026-06-19"
 description: "The economics of re-usable code will shape the future profession of software development"
 categories:
   - ai
