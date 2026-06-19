@@ -187,6 +187,34 @@
   <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
+  <title>What happens next to software development?</title>
+  <dc:creator>Matt Hall</dc:creator>
+  <link>https://scienxlab.org/blog/what-happens-next-to-software.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The question “What happens next to open source?” came up several times at <a href="./open-for-energy/">the EAGE open source workshop</a> last week. And in various guises: funding stability, maintainer fatigue, supply chain security, and so on. But the biggest concern was the effect of AI on software development — under the assumption that agentic coding actually works in the medium and long term, which I think is not a given.</p>
+<p>So, if coding agents produce useful code and their role grows, what happens? It’s a good question, but I think it can be broadened: <em>What happens next to software development?</em></p>
+<p>My take: <strong>token price is everything</strong>.</p>
+<p>If coding agents work and tokens are cheap then everything we know changes. It becomes a manifestation of <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">Rich Sutton’s bitter lesson</a>: human ideas and patterns can and will be beaten with compute. No need to store code: just generate what you need, when you need it. No more repos! Forget JIT compiling — JIT everything!</p>
+<p>In the recent past, in the world of nearly-free tokens, an agent in need of a wavelet (say) will likely prefer to implement the algorithm from scratch in preference to using a library. If code is free and programming is solved, then why bother looking for a library? (Wait, then why use Python? Why not generate C? Wait, why not assembly? Or machine code? Or just generate the binary bitstream straight into memory?)</p>
+<p>OK, let’s calm down —&nbsp;if agentic coding works then for sure tokens will not be cheap.</p>
+<p>So tokens will be expensive and “synthetic labour” will cost real money — if you follow the news, you know the AI revenue maximization function <a href="https://www.investing.com/analysis/the-ai-token-pricing-crisis-behind-openai-and-anthropics-revenue-race-200680777">is already running</a>. Now we will have to motivate agents to re-use code (and languages!), because repos and libraries serve to ‘freeze’ invested labour. With a Scrooge criterion, agents and their human minders will re-discover DRY, the advantages of open source, long-lived teams, and so on. And yeah, it will be pretty annoying because we know all this, remember?</p>
+<p>Today I think there’s reasonable evidence to suggest that, far from being inclined to economise, large language models use more tokens than they need. They tend to produce a lot of code, often repeat themselves, and always <a href="https://www.library.hbs.edu/working-knowledge/how-ai-chatbots-try-to-keep-you-from-walking-away">seek to prolong interaction</a>: LLMs are Scrooge on Christmas Day,&nbsp;except you’re paying for all of it!</p>
+<p><strong>Without a strong compulsion to minimize cost — a frugality function or re-use requirement that will of course drive token prices further up — I don’t know how this changes.</strong></p>
+
+
+
+ ]]></description>
+  <category>ai</category>
+  <category>programming</category>
+  <guid>https://scienxlab.org/blog/what-happens-next-to-software.html</guid>
+  <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
   <title>Open for Energy</title>
   <dc:creator>Matt Hall</dc:creator>
   <dc:creator>Guillermo Vargas</dc:creator>
